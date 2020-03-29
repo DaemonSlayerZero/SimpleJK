@@ -11,9 +11,18 @@ Simple Jedi Knight Mod (_clientside version_) is made for people who like to pla
 #### Client Side Features
 
 - [ ] General fixes in the multiplayer menu
-- [ ] New in-game HD menu items and HD fonts 
+- [x] New in-game HD menu items and HD fonts 
 - [ ] In-game serverlist for easy connection to the another server 
 - [ ] New menu reference for existing commands in-game
+
+---
+
+# Special Thanks
+
+Thanks to these people who helped me with the project.
+
+- [Grab](https://github.com/Grab11) _(HD items, fonts and fixes on weapons for high fov)_
+- [Bucky](https://github.com/Bucky21659) _(HD splash icon from EternalJK)_
 
 # Contact
 
