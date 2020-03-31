@@ -22,8 +22,8 @@
 		onESC 
 		{ 
 			play				"sound/interface/esc.wav" ;
-			close				all;
-			open				mainMenu 
+			close				multiplayermenu ; //[Flendo] - Updated this
+			open				main ; //[Flendo] - Updated this
 		}
 				
 		onOpen
@@ -509,8 +509,8 @@
 			action 
 			{ 
 				play			"sound/interface/esc.wav" ; 
-				close			all ; 
-				open			mainMenu
+				close			multiplayermenu ; //[Flendo] - Updated this
+				open			main ; //[Flendo] - Updated this
 			}
 
 		}

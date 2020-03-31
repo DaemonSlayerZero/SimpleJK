@@ -23,6 +23,7 @@
 		
 		onESC 
 		{ 
+		    play				"sound/interface/esc.wav" ; //[Flendo] - Added sound
 			close				error_popmenu ; 
 			open				main 
 		}
@@ -82,7 +83,7 @@
 			name				button_glow
 			group				none
 			style				WINDOW_STYLE_SHADER
-			rect				118 295 85 26
+			rect				118 297 85 26 //[Flendo] - Updated position
 			background			"gfx/menus/menu_buttonback"							forecolor			1 1 1 1
 			visible				0
 			decoration
@@ -98,6 +99,7 @@
 			text				@MENUS_OKAY
 			textscale			1
 			textalign			ITEM_ALIGN_CENTER
+			textstyle			3 //[Flendo] - Added shader
 			textalignx 			22
 			forecolor			1 .682 0 1
 
@@ -105,7 +107,7 @@
 						
 			action 
 			{ 
-				play			"sound/misc/nomenu.wav"  
+				play			"sound/interface/button1.wav"  //[Flendo] - Changed sound
 				close			error_popmenu  
 				open			main
 			}

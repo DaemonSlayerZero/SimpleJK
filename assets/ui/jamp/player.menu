@@ -20,9 +20,9 @@
 									
 		onESC 
 		{ 
-			play		"sound/interface/menuroam.wav"
+			play		"sound/interface/esc.wav" ; //[Flendo] - Changed sound
 			close		playerMenu
-			open		mainMenu
+			open		main
 		}
 
 		onClose 

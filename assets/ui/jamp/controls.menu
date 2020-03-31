@@ -47,7 +47,7 @@
 									
 		onESC 
 		{ 
-			play				"sound/interface/menuroam.wav" ; 
+			play				"sound/interface/esc.wav" ; //[Flendo] - Changed sound
 			hide				highlights ;
 			close				controlsMenu ; 
 			open				main ;
@@ -154,7 +154,7 @@
 			name				newgamebutton_glow
 			group				mods
 			style				WINDOW_STYLE_SHADER
-			rect				7 126 130 24
+			rect				-40 125 230 30 //[Flendo] - Fixed position
 			background			"gfx/menus/menu_buttonback"			// Frame around button
 			forecolor			1 1 1 1
 			visible			0
@@ -174,7 +174,7 @@
 			textscale			1.1
 			textaligny			0
 			textalign			ITEM_ALIGN_CENTER
-			textstyle			0
+			textstyle			3 //[Flendo] - Added shader
 			textalignx			65
 			forecolor			1 .682 0 1
 			visible			1
@@ -201,7 +201,7 @@
 			name				profilebutton_glow
 			group				mods
 			style				WINDOW_STYLE_SHADER
-			rect				170 126 130 24
+			rect				120 125 230 30 //[Flendo] - Fixed position
 			background			"gfx/menus/menu_buttonback"			// Frame around button
 			forecolor			1 1 1 1
 			visible			0
@@ -221,7 +221,7 @@
 			font				3
 			textscale			1.1
 			textalign			ITEM_ALIGN_CENTER
-			textstyle			0
+			textstyle			3 //[Flendo] - Added shader
 			textalignx			65
 			forecolor			1 .682 0 1
 			visible			1
@@ -248,7 +248,7 @@
 			name				controlsbutton_glow
 			group				mods
 			style				WINDOW_STYLE_SHADER
-			rect				340 126 130 24
+//			rect				340 126 130 24
 			background			"gfx/menus/menu_buttonback"			// Frame around button
 			forecolor			1 1 1 1
 			visible			0
@@ -267,7 +267,7 @@
 			textscale			1.1
 			textaligny			0
 			textalign			ITEM_ALIGN_CENTER
-			textstyle			0
+			textstyle			3 //[Flendo] - Added shader
 			textalignx			65
 			backcolor			0 0 0 0
 			forecolor			1 1 1 1
@@ -289,7 +289,7 @@
 			name				setupbutton_glow
 			group				mods
 			style				WINDOW_STYLE_SHADER
-			rect				502 126 130 24
+			rect				452 125 230 30 //[Flendo] - Fixed position
 			background			"gfx/menus/menu_buttonback"			// Frame around button
 			forecolor			1 1 1 1
 			visible			0
@@ -308,7 +308,7 @@
 			textscale			1.1
 			textaligny			0
 			textalign			ITEM_ALIGN_CENTER
-			textstyle			0
+			textstyle			3 //[Flendo] - Added shader
 			textalignx			65
 			backcolor			0 0 0 0
 			forecolor			1 .682 0 1
@@ -375,7 +375,7 @@
 			name				exitgamebutton_glow
 			group				mods
 			style				WINDOW_STYLE_SHADER
-			rect				255 444 130 24
+			rect				215 441 210 32 //[Flendo] - Fixed position
 			background			"gfx/menus/menu_buttonback"			// Frame around button
 			forecolor			1 1 1 1
 			visible			0
@@ -394,7 +394,7 @@
 			font				3
 			textscale			1.1
 			textalign			ITEM_ALIGN_CENTER
-			textstyle			0
+			textstyle			3 //[Flendo] - Added shader
 			textalignx			65
 			textaligny			-1
 			forecolor			1 .682 0 1
@@ -446,7 +446,7 @@
 			name				movementcontrolbutton_glow
 			group				mods
 			style				WINDOW_STYLE_SHADER
-			rect				80 185 180 24
+			rect				65 187 180 24 //[Flendo] - Fixed position
 			background			"gfx/menus/menu_blendbox2"			// Frame around button
 			forecolor			1 1 1 1
 			visible				0
@@ -466,7 +466,7 @@
 			textalignx			160
 			textaligny			2
 			textalign			ITEM_ALIGN_RIGHT
-			textstyle			0
+			textstyle			3 //[Flendo] - Added shader
 			forecolor			1 .682 0 1
 			visible				1
 			descText			@MENUS_CONFIGURE_MOVEMENT_KEYS
@@ -507,7 +507,7 @@
 			name				attackcontrolbutton_glow
 			group				mods
 			style				WINDOW_STYLE_SHADER
-			rect				80 209 180 24
+			rect				65 211 180 24 //[Flendo] - Fixed position
 			background			"gfx/menus/menu_blendbox2"			// Frame around button
 			forecolor			1 1 1 1
 			visible				0
@@ -527,7 +527,7 @@
 			textalignx			160
 			textaligny			2
 			textalign			ITEM_ALIGN_RIGHT
-			textstyle			0
+			textstyle			3 //[Flendo] - Added shader
 			forecolor			1 .682 0 1
 			visible				1
 			descText			@MENUS_INTERACTION_DESC
@@ -567,7 +567,7 @@
 			name				weaponscontrolbutton_glow
 			group				mods
 			style				WINDOW_STYLE_SHADER
-			rect				80 233 180 24
+			rect				65 235 180 24 //[Flendo] - Fixed position
 			background			"gfx/menus/menu_blendbox2"			// Frame around button
 			forecolor			1 1 1 1
 			visible			0
@@ -587,7 +587,7 @@
 			textalignx			160
 			textaligny			2
 			textalign			ITEM_ALIGN_RIGHT
-			textstyle			0
+			textstyle			3 //[Flendo] - Added shader
 			forecolor			1 .682 0 1
 			visible			1
 			descText			@MENUS_CONFIGURE_WEAPON_CONTROLS
@@ -627,7 +627,7 @@
 			name				forcecontrolbutton_glow
 			group				mods
 			style				WINDOW_STYLE_SHADER
-			rect				80 257 180 24
+			rect				65 259 180 24 //[Flendo] - Fixed position
 			background			"gfx/menus/menu_blendbox2"			// Frame around button
 			forecolor			1 1 1 1
 			visible			0
@@ -647,7 +647,7 @@
 			textalignx			160
 			textaligny			2
 			textalign			ITEM_ALIGN_RIGHT
-			textstyle			0
+			textstyle			3 //[Flendo] - Added shader
 			forecolor			1 .682 0 1
 			visible			1
 			descText			@MENUS_CONFIGURE_FORCE_POWER
@@ -687,7 +687,7 @@
 			name				forcecontrolbutton2_glow
 			group				mods
 			style				WINDOW_STYLE_SHADER
-			rect				80 281 180 24
+			rect				65 283 180 24 //[Flendo] - Fixed position
 			background			"gfx/menus/menu_blendbox2"			// Frame around button
 			forecolor			1 1 1 1
 			visible			0
@@ -706,7 +706,7 @@
 			textalignx			160
 			textaligny			2
 			textalign			ITEM_ALIGN_RIGHT
-			textstyle			0
+			textstyle			3 //[Flendo] - Added shader
 			forecolor			1 .682 0 1
 			visible			1
 			descText			@MENUS_CONFIGURE_FORCE_POWER
@@ -746,7 +746,7 @@
 			name				mousejoystickcontrolbutton_glow
 			group				mods
 			style				WINDOW_STYLE_SHADER
-			rect				80 305 180 24
+			rect				65 307 180 24 //[Flendo] - Fixed position
 			background			"gfx/menus/menu_blendbox2"			// Frame around button
 			forecolor			1 1 1 1
 			visible			0
@@ -766,7 +766,7 @@
 			textalignx			160
 			textaligny			2
 			textalign			ITEM_ALIGN_RIGHT
-			textstyle			0
+			textstyle			3 //[Flendo] - Added shader
 			forecolor			1 .682 0 1
 			visible			1
 			descText			@MENUS_CONFIGURE_MOUSE_AND_JOYSTICK
@@ -806,7 +806,7 @@
 			name				othercontrolbutton_glow
 			group				mods
 			style				WINDOW_STYLE_SHADER
-			rect				80 329 180 24
+			rect				65 331 180 24 //[Flendo] - Fixed position
 			background			"gfx/menus/menu_blendbox2"			// Frame around button
 			forecolor			1 1 1 1
 			visible			0
@@ -826,7 +826,7 @@
 			textalignx			160
 			textaligny			2
 			textalign			ITEM_ALIGN_RIGHT
-			textstyle			0
+			textstyle			3 //[Flendo] - Added shader
 			forecolor			1 .682 0 1
 			visible			1
 			descText			@MENUS_CONFIGURE_ADDITIONAL

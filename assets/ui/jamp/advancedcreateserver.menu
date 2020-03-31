@@ -1136,6 +1136,7 @@
 			textalignx				80						// Center
 			textaligny				0
 			textalign				ITEM_ALIGN_CENTER
+			textstyle			    3 //[Flendo] - Added shader
 			forecolor			1 .682 0 1
 			visible				1 
 			action 
