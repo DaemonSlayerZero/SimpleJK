@@ -183,7 +183,7 @@
 			mouseEnter 
 			{ 
 				show			button_glow2 
-				setitemrect		button_glow2	10 27 220 26
+				setitemrect		button_glow2	5 27 220 26 //[Flendo] - Fixed position
 			}
 			mouseExit 
 			{ 
@@ -214,7 +214,7 @@
 			mouseEnter 
 			{ 
 				show			button_glow2 
-				setitemrect		button_glow2	10 55 220 26
+				setitemrect		button_glow2	5 55 220 26 //[Flendo] - Fixed position
 			}
 			mouseExit 
 			{ 
@@ -249,7 +249,7 @@
 			mouseEnter 
 			{ 
 				show			button_glow2 
-				setitemrect		button_glow2	242 24 200 20
+				setitemrect		button_glow2	237 26 200 20 //[Flendo] - Fixed position
 			}
 			mouseExit 
 			{ 
@@ -281,7 +281,7 @@
 			mouseEnter 
 			{ 
 				show			button_glow2 
-				setitemrect		button_glow2	243 42 200 20
+				setitemrect		button_glow2	237 44 200 20 //[Flendo] - Fixed position
 			}
 			mouseExit 
 			{ 
@@ -313,7 +313,7 @@
 			mouseEnter 
 			{ 
 				show			button_glow2 
-				setitemrect		button_glow2	242 60 200 20
+				setitemrect		button_glow2	237 62 200 20 //[Flendo] - Fixed position
 			}
 			mouseExit 
 			{ 
@@ -334,10 +334,11 @@
 			cvar				"ui_browserShowEmpty"
 			font				4
 			textscale			1
-			rect				430 26 180 18
+			rect				445 27 180 18 //[Flendo] - Fixed position
 			textalignx			0
 			textaligny			0
 			textalign			ITEM_ALIGN_LEFT
+			textstyle			3 //[Flendo] - Added shadow
 			forecolor			 .615 .615 .956 1
 			visible				1 
 			action 
@@ -348,7 +349,7 @@
 			mouseEnter 
 			{ 
 				show			button_glow2 
-				setitemrect		button_glow2	422 24 200 20
+				setitemrect		button_glow2	430 26 200 20 //[Flendo] - Fixed position
 			}
 			mouseExit 
 			{ 
@@ -366,10 +367,11 @@
 			cvar				"ui_browserShowFull"
 			font				4
 			textscale			1
-			rect				430 44 180 18
+			rect				445 45 180 18 //[Flendo] - Fixed position
 			textalignx			0
 			textaligny			0
 			textalign			ITEM_ALIGN_LEFT
+			textstyle			3 //[Flendo] - Added shadow
 			forecolor			 .615 .615 .956 1
 			visible				1 
 			action 
@@ -380,7 +382,7 @@
 			mouseEnter 
 			{ 
 				show			button_glow2 
-				setitemrect		button_glow2	422 42 200 20
+				setitemrect		button_glow2	430 44 200 20 //[Flendo] - Fixed position
 			}
 			mouseExit 
 			{ 
@@ -403,11 +405,12 @@
 				"@MENUS_LAN/CABLE" 25000  
 			}
 			textscale			1
-			rect				430 62 180 18
+			rect				445 63 180 18 //[Flendo] - Fixed position
 			font				4
 			textalignx			0
 			textaligny			0
 			textalign			ITEM_ALIGN_LEFT
+			textstyle			3 //[Flendo] - Added shadow
 			forecolor			 .615 .615 .956 1
 			visible				1 
 			action 
@@ -418,7 +421,7 @@
 			mouseEnter 
 			{ 
 				show			button_glow2 
-				setitemrect		button_glow2	422 60 200 20
+				setitemrect		button_glow2	430 62 200 20 //[Flendo] - Fixed position
 			}
 			mouseExit 
 			{ 
@@ -458,7 +461,7 @@
 			mouseEnter 
 			{ 
 				show			button_glow2 
-				setitemrect		button_glow2	7 90 265 24
+				setitemrect		button_glow2	2 90 265 24 //[Flendo] - Fixed position
 				setitemcolor		serverColumn bordercolor .79 .64 .22 1
 			}
 
@@ -503,6 +506,7 @@
 			}
 			mouseExit 
 			{ 
+			    hide			    button_glow2 //[Flendo] - Added glow 
 				setitemcolor		mapColumn bordercolor 0.2 0.2 0.5 0.5 
 			}	  	  
 		}
@@ -542,6 +546,7 @@
 			}
 			mouseExit 
 			{ 
+			    hide			button_glow2 //[Flendo] - Added glow
 				setitemcolor		playerColumn bordercolor 0.2 0.2 0.5 0.5 
 			}  	  
 		}
@@ -633,7 +638,7 @@
 		itemDef 
 		{
 			name				horizontalseparators
-			rect				10 116 604 26
+			rect				11 116 604 26 //[Flendo] - Fixed position
 			style				WINDOW_STYLE_FILLED
 			border				0
 			backcolor			0.1 0.1 0.3 0.5
@@ -655,7 +660,7 @@
 		itemDef 
 		{
 			name				horizontalseparators
-			rect				10 168 604 26
+			rect				11 168 604 26 //[Flendo] - Fixed position
 			style				WINDOW_STYLE_FILLED
 			border			0
 			backcolor			0.1 0.1 0.3 0.5
@@ -666,7 +671,7 @@
 		itemDef 
 		{
 			name				horizontalseparators
-			rect				10 194 604 26
+			rect				10 194 604 26 //[Flendo] - Fixed position
 			style				WINDOW_STYLE_FILLED
 			border			0
 			backcolor			0 0 0.2 0.5
@@ -677,7 +682,7 @@
 		itemDef 
 		{
 			name				horizontalseparators
-			rect				10 220 604 26
+			rect				11 220 604 26 //[Flendo] - Fixed position
 			style				WINDOW_STYLE_FILLED
 			border			0
 			backcolor			0.1 0.1 0.3 0.5
@@ -699,7 +704,7 @@
 		itemDef 
 		{
 			name				horizontalseparators
-			rect				10 272 604 26
+			rect				11 272 604 26 //[Flendo] - Fixed position
 			style				WINDOW_STYLE_FILLED
 			border			0
 			backcolor			0.1 0.1 0.3 0.5
@@ -721,7 +726,7 @@
 		itemDef 
 		{
 			name				horizontalseparators
-			rect				10 324 604 26
+			rect				11 324 604 26 //[Flendo] - Fixed position
 			style				WINDOW_STYLE_FILLED
 			border			0
 			backcolor			0.1 0.1 0.3 0.5
@@ -861,7 +866,7 @@
 			ownerdraw			UI_SERVERREFRESHDATE
 			font				4
 			textscale			1
-			rect				10 376 285 20
+			rect				10 377 285 20 //[Flendo] - Fixed position
 			textalign			ITEM_ALIGN_LEFT
 			textalignx			0		
 			textaligny			0
@@ -884,7 +889,7 @@
 			font				4
 			textscale			1
 			style				WINDOW_STYLE_FILLED
-			rect				10 402 120 20
+			rect				10 401 120 20 //[Flendo] - Fixed position
 			textalign			ITEM_ALIGN_CENTER
 			textalignx			60		
 			textaligny			0
@@ -898,7 +903,7 @@
 			mouseenter 
 			{ 
 				show			button_glow 
-				setitemrect		button_glow	7 400 150 20
+				setitemrect		button_glow	0 400 150 20 //[Flendo] - Fixed position
 			}
 			mouseexit 
 			{ 
@@ -916,7 +921,7 @@
 			font				4
 			textscale			1
 			style				WINDOW_STYLE_FILLED
-			rect				135 402 120 20
+			rect				135 401 120 20 //[Flendo] - Fixed position
 			textalign			ITEM_ALIGN_CENTER
 			textalignx			60		
 			textaligny			0
@@ -930,7 +935,7 @@
 			mouseenter 
 			{ 
 				show			button_glow 
-				setitemrect		button_glow	132 400 150 20
+				setitemrect		button_glow	125 400 150 20 //[Flendo] - Fixed position
 			}
 			mouseexit 
 			{ 
@@ -949,7 +954,7 @@
 			textscale			1
 			style				WINDOW_STYLE_FILLED
 			ownerdrawFlag			UI_SHOW_NOTFAVORITESERVERS
-			rect				260 402 120 20
+			rect				260 401 120 20 //[Flendo] - Fixed position
 			textalign			ITEM_ALIGN_CENTER
 			textalignx			60		
 			textaligny			0
@@ -963,7 +968,7 @@
 			mouseenter 
 			{ 
 				show			button_glow 
-				setitemrect		button_glow	257 400 150 20
+				setitemrect		button_glow	250 400 150 20 //[Flendo] - Fixed position
 			}
 			mouseexit 
 			{ 
@@ -981,7 +986,7 @@
 			textscale			1
 			style				WINDOW_STYLE_FILLED
 			ownerdrawFlag			UI_SHOW_FAVORITESERVERS
-			rect				260 402 120 20
+			rect				260 401 120 20 //[Flendo] - Fixed position
 			textalign			ITEM_ALIGN_CENTER
 			textalignx			60	
 			textaligny			0
@@ -996,7 +1001,7 @@
 			mouseenter 
 			{ 
 				show			button_glow 
-				setitemrect		button_glow	257 400 150 20
+				setitemrect		button_glow	250 400 150 20 //[Flendo] - Fixed position
 			}
 			mouseexit 
 			{ 
@@ -1014,7 +1019,7 @@
 			font				4
 			textscale			1
 			style				WINDOW_STYLE_FILLED
-			rect				385 402 120 20
+			rect				385 401 120 20 //[Flendo] - Fixed position
 			textalign			ITEM_ALIGN_CENTER
 			textalignx			60		
 			textaligny			0
@@ -1028,7 +1033,7 @@
 			mouseenter 
 			{ 
 				show			button_glow 
-				setitemrect		button_glow	382 400 150 20
+				setitemrect		button_glow	374 400 150 20 //[Flendo] - Fixed position
 			}
 			mouseexit 
 			{ 
@@ -1046,7 +1051,7 @@
 			font				4
 			textscale			1
 			style				WINDOW_STYLE_FILLED
-			rect				510 402 120 20
+			rect				510 401 120 20 //[Flendo] - Fixed position
 			textalign			ITEM_ALIGN_CENTER
 			textalignx			60
 			textaligny			0
@@ -1061,7 +1066,7 @@
 			mouseenter 
 			{ 
 				show			button_glow 
-				setitemrect		button_glow	507 400 150 20
+				setitemrect		button_glow	496 400 150 20 //[Flendo] - Fixed position
 			}
 			mouseexit 
 			{ 
@@ -1081,7 +1086,7 @@
 			type				ITEM_TYPE_BUTTON
 			font				3
 			textscale			1.1
-			textstyle			0
+			textstyle			3 //[Flendo] - Added shader
 			style				WINDOW_STYLE_FILLED
 			rect				59 444 130 24  
 			textalign			1
@@ -1099,7 +1104,7 @@
 			mouseEnter 
 			{ 
 				show			button_glow 
-				setitemrect		button_glow	30 441 190 30
+				setitemrect		button_glow	30 442 190 32 //[Flendo] - Fixed position
 			}
 			mouseExit 
 			{ 
@@ -1120,7 +1125,7 @@
 			font				3
 			textscale			1.1
 			textalign			ITEM_ALIGN_CENTER
-			textstyle			0
+			textstyle			3 //[Flendo] - Added shader
 			textalignx			65
 			textaligny			-1
 			forecolor			1 .682 0 1
@@ -1129,7 +1134,7 @@
 			mouseEnter 
 			{ 
 				show			button_glow 
-				setitemrect		button_glow	235 441 190 30
+				setitemrect		button_glow	215 441 210 32 //[Flendo] - Fixed position
 			}
 			mouseExit 
 			{ 
@@ -1152,7 +1157,7 @@
 			type				ITEM_TYPE_BUTTON
 			font				3
 			textscale			1
-			textstyle			0
+			textstyle			3 //[Flendo] - Added shader
 			style				WINDOW_STYLE_FILLED
 			rect				455 444 200 32
 			textalign			1
@@ -1172,7 +1177,7 @@
 			mouseEnter 
 			{ 
 				show			button_glow 
-				setitemrect		button_glow	425 441 190 30
+				setitemrect		button_glow	425 442 190 30 //[Flendo] - Added shader
 			}
 			mouseExit 
 			{ 

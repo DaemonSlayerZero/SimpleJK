@@ -147,7 +147,7 @@
 			textscale			1.1
 			textaligny			0
 			textalign			ITEM_ALIGN_CENTER
-			textstyle			0
+			textstyle			3 //[Flendo] - Added shader
 			textalignx			65
 			forecolor			1 1 1 1
 			visible			1
@@ -171,7 +171,7 @@
 			font				3
 			textscale			1.1
 			textalign			ITEM_ALIGN_CENTER
-			textstyle			0
+			textstyle			3 //[Flendo] - Added shader
 			textalignx			65
 			forecolor			1 .682 0 1
 			visible			1
@@ -179,7 +179,7 @@
 			mouseEnter 
 			{ 
 				show			button_glow 
-				setitemrect		button_glow	120 124 230 30
+				setitemrect		button_glow	120 125 230 30 //[Flendo] - Fixed position
 			}
 			mouseExit 
 			{ 
@@ -207,7 +207,7 @@
 			textscale			1.1
 			textaligny			0
 			textalign			ITEM_ALIGN_CENTER
-			textstyle			0
+			textstyle			3 //[Flendo] - Added shader
 			textalignx			65
 			backcolor			0 0 0 0
 			forecolor			1 .682 0 1
@@ -216,7 +216,7 @@
 			mouseEnter 
 			{ 
 				show			button_glow 
-				setitemrect		button_glow	290 124 230 30
+				setitemrect		button_glow	290 125 230 30 //[Flendo] - Fixed position
 			}
 			mouseExit 
 			{ 
@@ -244,7 +244,7 @@
 			textscale			1.1
 			textaligny			0
 			textalign			ITEM_ALIGN_CENTER
-			textstyle			0
+			textstyle			3 //[Flendo] - Added shader
 			textalignx			65
 			backcolor			0 0 0 0
 			forecolor			1 .682 0 1
@@ -253,7 +253,7 @@
 			mouseEnter 
 			{ 
 				show			button_glow 
-				setitemrect		button_glow	452 124 230 30
+				setitemrect		button_glow	452 125 230 30 //[Flendo] - Fixed position
 			}
 			mouseExit 
 			{ 
@@ -312,7 +312,7 @@
 			font				3
 			textscale			1
 			textalign			ITEM_ALIGN_CENTER
-			textstyle			0
+			textstyle			3 //[Flendo] - Added shader
 			textalignx			95
 			textaligny			8
 			forecolor			1 .682 0 1
@@ -347,7 +347,7 @@
 			font				3
 			textscale			1
 			textalign			ITEM_ALIGN_CENTER
-			textstyle			0
+			textstyle			3 //[Flendo] - Added shader
 			textalignx			95
 			textaligny			8
 			forecolor			1 .682 0 1
@@ -382,7 +382,7 @@
 			font				3
 			textscale			1
 			textalign			ITEM_ALIGN_CENTER
-			textstyle			0
+			textstyle			3 //[Flendo] - Added shader
 			textalignx			95
 			textaligny			8
 			forecolor			1 .682 0 1
@@ -417,7 +417,7 @@
 			font				3
 			textscale			1
 			textalign			ITEM_ALIGN_CENTER
-			textstyle			0
+			textstyle			3 //[Flendo] - Added shader
 			textalignx			95
 			textaligny			8
 			forecolor			1 .682 0 1
@@ -452,7 +452,7 @@
 			font				3
 			textscale			1
 			textalign			ITEM_ALIGN_CENTER
-			textstyle			0
+			textstyle			3 //[Flendo] - Added shader
 			textalignx			95
 			textaligny			8
 			forecolor			1 .682 0 1
@@ -499,7 +499,7 @@
 			mouseEnter 
 			{ 
 				show			button_glow 
-				setitemrect		button_glow	30 441 190 30
+				setitemrect		button_glow	30 442 190 32 //[Flendo] - Fixed position
 			}
 			mouseExit 
 			{ 
@@ -528,7 +528,7 @@
 			font				3
 			textscale			1.1
 			textalign			ITEM_ALIGN_CENTER
-			textstyle			0
+			textstyle			3 //[Flendo] - Added shader
 			textalignx			65
 			textaligny			-1
 			forecolor			1 .682 0 1
@@ -537,7 +537,7 @@
 			mouseEnter 
 			{ 
 				show			button_glow 
-				setitemrect		button_glow	225 441 190 30
+				setitemrect		button_glow	215 441 210 32 //[Flendo] - Fixed position
 			}
 			mouseExit 
 			{ 

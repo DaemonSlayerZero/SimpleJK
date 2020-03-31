@@ -125,6 +125,17 @@
 //----------------------------------------------------------------------------------------------
 		itemDef 
 		{
+			name				newgamebutton_glow
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				-40 125 230 30 //[Flendo] - Fixed position
+			background			"gfx/menus/menu_buttonback"
+			forecolor			1 1 1 1
+			visible				0
+			decoration
+		}
+		itemDef 
+		{
 			name				button_glow
 			group				none
 			style				WINDOW_STYLE_SHADER
@@ -149,19 +160,18 @@
 			textscale			1.1
 			textaligny			0
 			textalign			ITEM_ALIGN_CENTER
-			textstyle			0
+			textstyle			3 //[Flendo] - Added shader
 			textalignx			65
 			forecolor			1 .682 0 1
 			visible			1
 
 			mouseEnter 
 			{ 
-				show			button_glow 
-				setitemrect		button_glow	0 124 180 30
+				show			newgamebutton_glow 
 			}
 			mouseExit 
 			{ 
-				hide			button_glow 
+				hide			newgamebutton_glow 
 			}	  	  
 			action 
 			{ 
@@ -185,7 +195,7 @@
 			font				3
 			textscale			1.1
 			textalign			ITEM_ALIGN_CENTER
-			textstyle			0
+			textstyle			3 //[Flendo] - Added shader
 			textalignx			65
 			forecolor			1 .682 0 1
 			visible			1
@@ -193,7 +203,7 @@
 			mouseEnter 
 			{ 
 				show			button_glow 
-				setitemrect		button_glow	120 124 230 30
+				setitemrect		button_glow	120 125 230 30 //[Flendo] - Fixed position
 			}
 			mouseExit 
 			{ 
@@ -221,7 +231,7 @@
 			textscale			1.1
 			textaligny			0
 			textalign			ITEM_ALIGN_CENTER
-			textstyle			0
+			textstyle			3 //[Flendo] - Added shader
 			textalignx			65
 			backcolor			0 0 0 0
 			forecolor			1 .682 0 1
@@ -230,7 +240,7 @@
 			mouseEnter 
 			{ 
 				show			button_glow 
-				setitemrect		button_glow	290 124 230 30
+				setitemrect		button_glow	290 125 230 30 //[Flendo] - Fixed position
 			}
 			mouseExit 
 			{ 
@@ -258,7 +268,7 @@
 			textscale			1.1
 			textaligny			0
 			textalign			ITEM_ALIGN_CENTER
-			textstyle			0
+			textstyle			3 //[Flendo] - Added shader
 			textalignx			65
 			backcolor			0 0 0 0
 			forecolor			1 .682 0 1
@@ -267,7 +277,7 @@
 			mouseEnter 
 			{ 
 				show			button_glow 
-				setitemrect		button_glow	452 124 230 30
+				setitemrect		button_glow	452 125 230 30 //[Flendo] - Fixed position
 			}
 			mouseExit 
 			{ 
@@ -326,7 +336,7 @@
 			font				3
 			textscale			1
 			textalign			ITEM_ALIGN_CENTER
-			textstyle			0
+			textstyle			3 //[Flendo] - Added shader
 			textalignx			95
 			textaligny			8
 			forecolor			1 .682 0 1
@@ -362,7 +372,7 @@
 			font				3
 			textscale			1
 			textalign			ITEM_ALIGN_CENTER
-			textstyle			0
+			textstyle			3 //[Flendo] - Added shader
 			textalignx			95
 			textaligny			8
 			forecolor			1 .682 0 1
@@ -397,7 +407,7 @@
 			font				3
 			textscale			1
 			textalign			ITEM_ALIGN_CENTER
-			textstyle			0
+			textstyle			3 //[Flendo] - Added shader
 			textalignx			95
 			textaligny			8
 			forecolor			1 .682 0 1
@@ -433,7 +443,7 @@
 			font				3
 			textscale			1
 			textalign			ITEM_ALIGN_CENTER
-			textstyle			0
+			textstyle			3 //[Flendo] - Added shader
 			textalignx			95
 			textaligny			8
 			forecolor			1 .682 0 1
@@ -469,7 +479,7 @@
 			font				3
 			textscale			1
 			textalign			ITEM_ALIGN_CENTER
-			textstyle			0
+			textstyle			3 //[Flendo] - Added shader
 			textalignx			95
 			textaligny			8
 			forecolor			1 .682 0 1
@@ -501,7 +511,7 @@
 			name				backbutton
 			group				fade_buttons
 			text				@MENUS_BACK
-			descText			@MENUS_BACKTOMAIN
+			descText			@MENUS_BACKUP_ONE_MENU //[Flendo] - Fixed text
 			type				ITEM_TYPE_BUTTON
 			style				WINDOW_STYLE_EMPTY
 			rect				59 444 130 24  
@@ -517,7 +527,7 @@
 			mouseEnter 
 			{ 
 				show			button_glow 
-				setitemrect		button_glow	30 441 190 30
+				setitemrect		button_glow	30 442 190 32 //[Flendo] - Fixed position
 			}
 			mouseExit 
 			{ 
@@ -528,7 +538,7 @@
 			{ 
 				play			"sound/interface/esc.wav" ; 
 				close			all ; 
-				open			mainMenu
+				open			multiplayermenu
 			}
 
 		}
@@ -546,7 +556,7 @@
 			font				3
 			textscale			1.1
 			textalign			ITEM_ALIGN_CENTER
-			textstyle			0
+			textstyle			3 //[Flendo] - Added shader
 			textalignx			65
 			textaligny			-1
 			forecolor			1 .682 0 1
@@ -555,7 +565,7 @@
 			mouseEnter 
 			{ 
 				show			button_glow 
-				setitemrect		button_glow	225 441 190 30
+				setitemrect		button_glow	215 441 210 32 //[Flendo] - Fixed position
 			}
 			mouseExit 
 			{ 

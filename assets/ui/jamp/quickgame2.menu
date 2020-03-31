@@ -546,7 +546,8 @@
 			}
 			mouseEnter 
 			{ 
-				show 			settingsButton1
+				show			button_glow 
+				setitemrect		button_glow	0 317 260 30 // Flendo - Added glow
 			}
 			mouseExit 
 			{ 
@@ -682,7 +683,7 @@
 			mouseEnter 
 			{ 
 				show			button_glow 
-				setitemrect		button_glow	30 441 190 30
+				setitemrect		button_glow	30 442 190 32 //[Flendo] - Fixed position
 			}
 			mouseExit 
 			{ 
@@ -711,7 +712,7 @@
 			font				3
 			textscale			1.1
 			textalign			ITEM_ALIGN_CENTER
-			textstyle			0
+			textstyle			3 //[Flendo] - Added shader
 			textalignx			65
 			textaligny			-1
 			forecolor			1 .682 0 1
@@ -720,7 +721,7 @@
 			mouseEnter 
 			{ 
 				show			button_glow 
-				setitemrect		button_glow	225 441 190 30
+				setitemrect		button_glow	215 441 210 32 //[Flendo] - Fixed position
 			}
 			mouseExit 
 			{ 
@@ -743,7 +744,7 @@
 			type					ITEM_TYPE_BUTTON
 			font					3
 			textscale				1.1
-			textstyle				0
+			textstyle				3 //[Flendo] - Added shader
 			style					WINDOW_STYLE_FILLED
 			rect					455 444 200 32
 			textalign				1
@@ -755,7 +756,7 @@
 			mouseEnter 
 			{ 
 				show			button_glow 
-				setitemrect		button_glow	425 441 190 30
+				setitemrect		button_glow	425 442 190 32 //[Flendo] - Fixed position
 			}
 			mouseExit 
 			{ 

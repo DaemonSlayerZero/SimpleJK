@@ -60,7 +60,7 @@
 			style				WINDOW_STYLE_SHADER
 			background			"gfx/menus/menu_blendbox"
 			text				@MENUS_BOTS
-      			rect				55 5 330 16
+      			rect				55 20 330 16 //[Flendo] - Fixed position
 			font				3
 			textscale			0.7
 			textalign			ITEM_ALIGN_CENTER		
@@ -346,7 +346,7 @@
 		{
 			name 				botlist_slot
 			style 				0
-			text 				@MENUS_9	
+			text 				@MENUS_9_1 //[Flendo] - Fixed number
 			descText			@MENUS_CLICK_FOR_HUMAN_BOTS
 			ownerdraw 			UI_BLUETEAM5
 			rect 				220 55 196 20 
@@ -610,7 +610,7 @@
 			font					3
 			textscale				1
 			style					WINDOW_STYLE_EMPTY
-			rect					140 352 160 30
+			rect					145 345 160 30 //[Flendo] - Fixed position
 			textalignx				80						// Center
 			textaligny				0
 			textalign				ITEM_ALIGN_CENTER
@@ -624,7 +624,7 @@
 			mouseEnter 
 			{ 
 				show			button_glow 
-				setitemrect		button_glow	130 350 200 34
+				setitemrect		button_glow	130 341 200 34 //[Flendo] - Fixed position
 			}
 			mouseExit 
 			{ 

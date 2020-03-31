@@ -59,7 +59,7 @@
 									
 		onESC 
 		{ 
-			play				"sound/interface/esc.wav" 
+			play			    "sound/weapons/saber/saberoff.mp3" //[Flendo] - Changed sound
 			close				all 
 			open				quitMenu 
 		}	
@@ -487,7 +487,7 @@
 			font				3
 			textscale			1.1
 			textalign			ITEM_ALIGN_CENTER
-			textstyle			0
+			textstyle			3 //[Flendo] - Added shader
 			textalignx			65
 			textaligny			-1
 			forecolor			1 .682 0 1
@@ -496,7 +496,7 @@
 			mouseEnter 
 			{ 
 				show			button_glow 
-				setitemrect		button_glow	215 440 210 32
+				setitemrect		button_glow	215 441 210 32 //[Flendo] - Fixed position
 			}
 			mouseExit 
 			{ 

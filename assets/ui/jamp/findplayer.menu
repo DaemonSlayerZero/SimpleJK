@@ -278,7 +278,7 @@
 			mouseEnter 
 			{ 
 				show			button_glow
-				setitemrect		button_glow	15 312 150 26
+				setitemrect		button_glow	5 313 150 26 //[Flendo] - Fixed position
 			}
 			mouseExit 
 			{ 
@@ -309,7 +309,7 @@
 			mouseEnter 
 			{ 
 				show			button_glow
-				setitemrect		button_glow	115 312 160 26
+				setitemrect		button_glow	115 313 160 26 //[Flendo] - Fixed position
 			}
 			mouseExit 
 			{ 
@@ -340,7 +340,7 @@
 			mouseEnter 
 			{ 
 				show			button_glow
-				setitemrect		button_glow	235 312 160 26
+				setitemrect		button_glow	235 313 160 26 //[Flendo] - Fixed position
 			}
 			mouseExit 
 			{ 

@@ -20,6 +20,7 @@
 		onEsc 
 		{ 
 			setcvartocvar 			password g_password 
+			play				"sound/interface/esc.wav" //[Flendo] - Added new sound
 			close				createserver
 			open				multiplayermenu
 			uiscript			checkservername
@@ -170,7 +171,7 @@
 			name				gametypefieldButton
 			group				none
 			style				WINDOW_STYLE_SHADER
-			rect				5 25 255 26 
+			rect				5 23 255 26 //[Flendo] - Fixed position
 			background			"gfx/menus/menu_blendbox3"		
 			forecolor			.615 .615 .956 1
 			visible				0 
@@ -1063,7 +1064,7 @@
 		{
 			name				bot9Button
 			style				WINDOW_STYLE_SHADER
-			rect 				435 55 196 20 
+			rect 				425 55 196 20 //[Flendo] - Fixed position
 			background			"gfx/menus/menu_blendbox"			
 			forecolor			1 1 1 1
 			decoration
@@ -1105,7 +1106,7 @@
 		{
 			name				bot10Button
 			style				WINDOW_STYLE_SHADER
-			rect 				435 75 196 20 
+			rect 				425 75 196 20 //[Flendo] - Fixed position 
 			background			"gfx/menus/menu_blendbox"			
 			forecolor			1 1 1 1
 			decoration
@@ -1147,7 +1148,7 @@
 		{
 			name				bot11Button
 			style				WINDOW_STYLE_SHADER
-			rect 				435 95 196 20 
+			rect 				425 95 196 20 //[Flendo] - Fixed position  
 			background			"gfx/menus/menu_blendbox"			
 			forecolor			1 1 1 1
 			decoration
@@ -1189,7 +1190,7 @@
 		{
 			name				bot12Button
 			style				WINDOW_STYLE_SHADER
-			rect 				435 115 196 20 
+			rect 				425 115 196 20 //[Flendo] - Fixed position  
 			background			"gfx/menus/menu_blendbox"			
 			forecolor			1 1 1 1
 			decoration
@@ -1231,7 +1232,7 @@
 		{
 			name				bot13Button
 			style				WINDOW_STYLE_SHADER
-			rect 				435 135 196 20 
+			rect 				425 135 196 20 //[Flendo] - Fixed position  
 			background			"gfx/menus/menu_blendbox"			
 			forecolor			1 1 1 1
 			decoration
@@ -1273,7 +1274,7 @@
 		{
 			name				bot14Button
 			style				WINDOW_STYLE_SHADER
-			rect 				435 155 196 20 
+			rect 				425 155 196 20 //[Flendo] - Fixed position  
 			background			"gfx/menus/menu_blendbox"			
 			forecolor			1 1 1 1
 			decoration
@@ -1315,7 +1316,7 @@
 		{
 			name				bot15Button
 			style				WINDOW_STYLE_SHADER
-			rect 				435 175 196 20 
+			rect 				425 175 196 20 //[Flendo] - Fixed position  
 			background			"gfx/menus/menu_blendbox"			
 			forecolor			1 1 1 1
 			decoration
@@ -1357,7 +1358,7 @@
 		{
 			name				bot16Button
 			style				WINDOW_STYLE_SHADER
-			rect 				435 195 196 20 
+			rect 				425 195 196 20 //[Flendo] - Fixed position  
 			background			"gfx/menus/menu_blendbox"			
 			forecolor			1 1 1 1
 			decoration
@@ -1800,7 +1801,7 @@
 			type				ITEM_TYPE_BUTTON
 			font				3
 			textscale			1.1
-			textstyle			0
+			textstyle			3 //[Flendo] - Added shader 
 			style				WINDOW_STYLE_FILLED
 			rect				10 444 200 32
 			textalign			1
@@ -1811,7 +1812,7 @@
 			visible			1 
 			action 
 			{ 
-				play			"sound/interface/button1" 
+				play			"sound/interface/esc.wav" //[Flendo] - Fixed sound
 				close			createserver 
 				open			multiplayermenu 
 			}
@@ -1845,7 +1846,7 @@
 			type					ITEM_TYPE_BUTTON
 			font					3
 			textscale				1.1
-			textstyle				0
+			textstyle				3 //[Flendo] - Added shader
 			style					WINDOW_STYLE_FILLED
 			rect					430 444 200 32
 			textalign				1
@@ -1894,7 +1895,7 @@
 			type					ITEM_TYPE_BUTTON
 			font					3
 			textscale				1.1
-			textstyle				0
+			textstyle				3 //[Flendo] - Added shader
 			style					WINDOW_STYLE_FILLED
 			rect					220 444 200 32
 			textalign				1

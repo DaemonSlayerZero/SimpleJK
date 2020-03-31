@@ -32,7 +32,7 @@
 		
 		onESC 
 		{ 
-			play				"sound/interface/button1.wav" ; 
+			play				"sound/interface/esc.wav" ; //[Flendo] - Changed sound
 			close				advancedcreateserver ; 
 			open				createserver ;
 		}
@@ -1132,7 +1132,7 @@
 			font					3
 			textscale				1
 			style					WINDOW_STYLE_EMPTY
-			rect					200 352 160 30
+			rect					200 354 160 30 //[Flendo] - Fixed position
 			textalignx				80						// Center
 			textaligny				0
 			textalign				ITEM_ALIGN_CENTER

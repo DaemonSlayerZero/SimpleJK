@@ -22,9 +22,9 @@
 									
 		onESC 
 		{ 
-			play				"sound/interface/menuroam.wav" ; 
+			play				"sound/interface/esc.wav" ; //[Flendo] - Changed sound
 			close				all ; 
-			open				main ;
+			open				multiplayermenu ; //[Flendo] - Changed menu to open
 		}
 	
 
@@ -129,7 +129,7 @@
 			name				newgamebutton_glow
 			group				mods
 			style				WINDOW_STYLE_SHADER
-			rect				7 126 130 24
+			rect				-40 125 230 30 //[Flendo] - Fixed position
 			background			"gfx/menus/menu_buttonback"			// Frame around button
 			forecolor			1 1 1 1
 			visible			0
@@ -149,7 +149,7 @@
 			textscale			1.1
 			textaligny			0
 			textalign			ITEM_ALIGN_CENTER
-			textstyle			0
+			textstyle			3 //[Flendo] - Added shader
 			textalignx			65
 			forecolor			1 .682 0 1
 			visible			1
@@ -176,7 +176,7 @@
 			name				profilebutton_glow
 			group				mods
 			style				WINDOW_STYLE_SHADER
-			rect				170 126 130 24
+			rect				120 125 230 30 //[Flendo] - Fixed position
 			background			"gfx/menus/menu_buttonback"			// Frame around button
 			forecolor			1 1 1 1
 			visible			0
@@ -196,7 +196,7 @@
 			font				3
 			textscale			1.1
 			textalign			ITEM_ALIGN_CENTER
-			textstyle			0
+			textstyle			3 //[Flendo] - Added shader
 			textalignx			65
 			forecolor			1 .682 0 1
 			visible			1
@@ -223,7 +223,7 @@
 			name				controlsbutton_glow
 			group				mods
 			style				WINDOW_STYLE_SHADER
-			rect				340 126 130 24
+			rect				290 125 230 30 //[Flendo] - Fixed position
 			background			"gfx/menus/menu_buttonback"			// Frame around button
 			forecolor			1 1 1 1
 			visible			0
@@ -242,7 +242,7 @@
 			textscale			1.1
 			textaligny			0
 			textalign			ITEM_ALIGN_CENTER
-			textstyle			0
+			textstyle			3 //[Flendo] - Added shader
 			textalignx			65
 			backcolor			0 0 0 0
 			forecolor			1 .682 0 1
@@ -270,7 +270,7 @@
 			name				setupbutton_glow
 			group				mods
 			style				WINDOW_STYLE_SHADER
-			rect				502 126 130 24
+			rect				452 125 230 30 //[Flendo] - Fixed position
 			background			"gfx/menus/menu_buttonback"			// Frame around button
 			forecolor			1 1 1 1
 			visible			0
@@ -289,7 +289,7 @@
 			textscale			1.1
 			textaligny			0
 			textalign			ITEM_ALIGN_CENTER
-			textstyle			0
+			textstyle			3 //[Flendo] - Added shader
 			textalignx			65
 			backcolor			0 0 0 0
 			forecolor			1 .682 0 1
@@ -355,7 +355,7 @@
 			name				backButton
 			group				none
 			style				WINDOW_STYLE_SHADER
-			rect				10 444 200 32
+			rect				30 442 190 32 //[Flendo] - Fixed position
 			background			"gfx/menus/menu_buttonback"			
 			forecolor			1 1 1 1
 			decoration
@@ -366,7 +366,7 @@
 		{
 			name				back
 			text				@MENUS_BACK
-			descText			@MENUS_EXIT_TO_MAIN_MENU
+			descText			@MENUS_BACKUP_ONE_MENU //[Flendo] - Fixed text
 			type				ITEM_TYPE_BUTTON
 			font				3
 			textscale			1.1
@@ -377,11 +377,12 @@
 			textalignx			65
 			textaligny			-1
 			textalign			ITEM_ALIGN_CENTER
+			textstyle			3 //[Flendo] - Added shader
 			forecolor			1 .682 0 1
 			visible			1 
 			action 
 			{ 
-				play			"sound/interface/button1.wav" ; 
+				play			"sound/interface/esc.wav" ; //[Flendo] - Fixed sound
 				close			all ; 
 				open			multiplayermenu 
 			}
@@ -401,7 +402,7 @@
 			name				exitgamebutton_glow
 			group				mods
 			style				WINDOW_STYLE_SHADER
-			rect				255 444 130 24
+			rect				215 441 210 32 //[Flendo] - Fixed position
 			background			"gfx/menus/menu_buttonback"			// Frame around button
 			forecolor			1 1 1 1
 			visible			0
@@ -420,7 +421,7 @@
 			font				3
 			textscale			1.1
 			textalign			ITEM_ALIGN_CENTER
-			textstyle			0
+			textstyle			3 //[Flendo] - Added shader
 			textalignx			65
 			textaligny			-1
 			forecolor			1 .682 0 1
@@ -498,7 +499,7 @@
 			name				beginButton
 			group				none
 			style				WINDOW_STYLE_SHADER
-			rect				245 390 150 30
+			rect				215 388 210 32 //[Flendo] - Fixed position
 			background			"gfx/menus/menu_buttonback"			// Frame around button
 			forecolor			1 1 1 1
 			decoration
@@ -518,6 +519,7 @@
 			textalignx			75						// Center
 			textaligny			1
 			textalign			ITEM_ALIGN_CENTER
+			textstyle			3 //[Flendo] - Added shader
 			forecolor			1 .682 0 1
 			visible				1 
 			action 

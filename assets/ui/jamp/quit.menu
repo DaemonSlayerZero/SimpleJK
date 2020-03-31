@@ -132,7 +132,7 @@
 			name				newgamebutton_glow
 			group				mods
 			style				WINDOW_STYLE_SHADER
-			rect				7 126 130 24
+			rect				-45 125 230 30 //[Flendo] - Fixed position
 			background			"gfx/menus/menu_buttonback"			// Frame around button
 			forecolor			1 1 1 1
 			visible			0
@@ -179,7 +179,7 @@
 			name				profilebutton_glow
 			group				mods
 			style				WINDOW_STYLE_SHADER
-			rect				170 126 130 24
+			rect				120 125 230 30 //[Flendo] - Fixed position
 			background			"gfx/menus/menu_buttonback"			// Frame around button
 			forecolor			1 1 1 1
 			visible			0
@@ -226,7 +226,7 @@
 			name				controlsbutton_glow
 			group				mods
 			style				WINDOW_STYLE_SHADER
-			rect				340 126 130 24
+			rect				290 125 230 30 //[Flendo] - Fixed position
 			background			"gfx/menus/menu_buttonback"			// Frame around button
 			forecolor			1 1 1 1
 			visible			0
@@ -273,7 +273,7 @@
 			name				setupbutton_glow
 			group				mods
 			style				WINDOW_STYLE_SHADER
-			rect				502 126 130 24
+			rect				452 125 230 30 //[Flendo] - Fixed position
 			background			"gfx/menus/menu_buttonback"			// Frame around button
 			forecolor			1 1 1 1
 			visible			0
@@ -400,7 +400,7 @@
 			name			quitgame_cancel_button
 			group			none
 			style			WINDOW_STYLE_SHADER
-			rect			59 444 130 24
+			rect			30 442 190 32 //[Flendo] - Fixed position
 			background		"gfx/menus/menu_buttonback"			// Frame around button
 			forecolor		1 1 1 1
 			decoration
@@ -415,13 +415,13 @@
 			text			@MENUS_NO
 			type			ITEM_TYPE_BUTTON
 			style			WINDOW_STYLE_EMPTY
-			rect			59 444 130 24
+			rect			59 445 130 24
 			font			3
 			textscale		1
 			textalignx		65
 			textaligny		-1
 			textalign		ITEM_ALIGN_CENTER
-			textstyle		0
+			textstyle		3 //[Flendo] - Added shader
 			descText		@MENUS_DO_NOT_LEAVE_JEDI_KNIGHT
 			forecolor			1 .682 0 1
 			visible		1
@@ -446,7 +446,7 @@
 			name			quitgame_yes_button
 			group			none
 			style			WINDOW_STYLE_SHADER
-			rect			454 444 130 24
+			rect			425 442 190 32 //[Flendo] - Fixed position
 			background		"gfx/menus/menu_buttonback"			// Frame around button
 			forecolor		1 1 1 1
 			decoration
@@ -461,13 +461,13 @@
 			text				@MENUS_YES
 			type				ITEM_TYPE_BUTTON
 			style				WINDOW_STYLE_EMPTY
-			rect				454 444 130 24
+			rect				454 445 130 24
 			font				3
 			textscale			1
 			textalignx			65
 			textaligny			-1
 			textalign			ITEM_ALIGN_CENTER
-			textstyle			0
+			textstyle			3 //[Flendo] - Added shader
 			descText			@MENUS_JEDI_KNIGHT_II
 			forecolor			1 .682 0 1
 			visible				1

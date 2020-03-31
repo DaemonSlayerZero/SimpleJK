@@ -26,7 +26,7 @@
 
 		onESC 
 		{ 
-			play			"sound/interface/button1.wav" ; 
+			play			"sound/interface/esc.wav" ; //[Flendo] - Changed sound
 
 			close			"rulesMenu_force" ;
 			open			"rulesMenu" ;
@@ -146,7 +146,7 @@
 			name				newgamebutton_glow
 			group				mods
 			style				WINDOW_STYLE_SHADER
-			rect				7 126 130 24
+			rect				-40 125 230 30 //[Flendo] - Fixed position
 			background			"gfx/menus/menu_buttonback"			// Frame around button
 			forecolor			1 1 1 1
 			visible			0
@@ -193,7 +193,7 @@
 			name				profilebutton_glow
 			group				mods
 			style				WINDOW_STYLE_SHADER
-			rect				170 126 130 24
+			rect				120 125 230 30 //[Flendo] - Fixed position
 			background			"gfx/menus/menu_buttonback"			// Frame around button
 			forecolor			1 1 1 1
 			visible			0
@@ -213,7 +213,7 @@
 			font				3
 			textscale			1.1
 			textalign			ITEM_ALIGN_CENTER
-			textstyle			0
+			textstyle			3 //[Flendo] - Added shader
 			textalignx			65
 			forecolor			1 .682 0 1
 			visible			1
@@ -241,7 +241,7 @@
 			name				controlsbutton_glow
 			group				mods
 			style				WINDOW_STYLE_SHADER
-			rect				340 126 130 24
+			rect				290 125 230 30 //[Flendo] - Fixed position
 			background			"gfx/menus/menu_buttonback"			// Frame around button
 			forecolor			1 1 1 1
 			visible			0
@@ -260,7 +260,7 @@
 			textscale			1.1
 			textaligny			0
 			textalign			ITEM_ALIGN_CENTER
-			textstyle			0
+			textstyle			3 //[Flendo] - Added shader
 			textalignx			65
 			backcolor			0 0 0 0
 			forecolor			1 .682 0 1
@@ -288,7 +288,7 @@
 			name				setupbutton_glow
 			group				mods
 			style				WINDOW_STYLE_SHADER
-			rect				502 126 130 24
+			rect				452 125 230 30 //[Flendo] - Fixed position
 			background			"gfx/menus/menu_buttonback"			// Frame around button
 			forecolor			1 1 1 1
 			visible			0
@@ -307,7 +307,7 @@
 			textscale			1.1
 			textaligny			0
 			textalign			ITEM_ALIGN_CENTER
-			textstyle			0
+			textstyle			3 //[Flendo] - Added shader
 			textalignx			65
 			backcolor			0 0 0 0
 			forecolor			1 .682 0 1
@@ -389,7 +389,7 @@
 			mouseEnter 
 			{ 
 				show			button_glow 
-				setitemrect		button_glow	30 441 190 30
+				setitemrect		button_glow	30 442 190 32 //[Flendo] - Fixed position
 			}
 			mouseExit 
 			{ 
@@ -411,7 +411,7 @@
 			name				exitgamebutton_glow
 			group				mods
 			style				WINDOW_STYLE_SHADER
-			rect				255 444 130 24
+			rect				215 441 210 32 //[Flendo] - Fixed position
 			background			"gfx/menus/menu_buttonback"			// Frame around button
 			forecolor			1 1 1 1
 			visible			0
@@ -430,7 +430,7 @@
 			font				3
 			textscale			1.1
 			textalign			ITEM_ALIGN_CENTER
-			textstyle			0
+			textstyle			3 //[Flendo] - Added shader
 			textalignx			65
 			textaligny			-1
 			forecolor			1 .682 0 1
@@ -495,7 +495,7 @@
 			group				smallhighlight
 			name				smallhighlight1
 			style				WINDOW_STYLE_SHADER
-			rect				40 185 170 15
+			rect				45 184 170 15 //[Flendo] - Fixed position
 			background			"gfx/menus/menu_blendbox2"			// Frame around button
 			forecolor			1 1 1 1
 			visible				0
@@ -507,7 +507,7 @@
 			group				smallhighlight
 			name				smallhighlight2
 			style				WINDOW_STYLE_SHADER
-			rect				40 200 170 15
+			rect				45 199 170 15 //[Flendo] - Fixed position 
 			background			"gfx/menus/menu_blendbox2"			// Frame around button
 			forecolor			1 1 1 1
 			visible				0
@@ -519,7 +519,7 @@
 			group				smallhighlight
 			name				smallhighlight3
 			style				WINDOW_STYLE_SHADER
-			rect				40 215 170 15
+			rect				45 214 170 15 //[Flendo] - Fixed position
 			background			"gfx/menus/menu_blendbox2"			// Frame around button
 			forecolor			1 1 1 1
 			visible				0
@@ -531,7 +531,7 @@
 			group				smallhighlight
 			name				smallhighlight4
 			style				WINDOW_STYLE_SHADER
-			rect				40 230 170 15
+			rect				45 229 170 15 //[Flendo] - Fixed position
 			background			"gfx/menus/menu_blendbox2"			// Frame around button
 			forecolor			1 1 1 1
 			visible				0
@@ -543,7 +543,7 @@
 			group				smallhighlight
 			name				smallhighlight5
 			style				WINDOW_STYLE_SHADER
-			rect				40 245 170 15
+			rect				45 244 170 15 //[Flendo] - Fixed position
 			background			"gfx/menus/menu_blendbox2"			// Frame around button
 			forecolor			1 1 1 1
 			visible				0
@@ -555,7 +555,7 @@
 			group				smallhighlight
 			name				smallhighlight6
 			style				WINDOW_STYLE_SHADER
-			rect				40 260 170 15
+			rect				45 259 170 15 //[Flendo] - Fixed position
 			background			"gfx/menus/menu_blendbox2"			// Frame around button
 			forecolor			1 1 1 1
 			visible				0
@@ -567,7 +567,7 @@
 			group				smallhighlight
 			name				smallhighlight7
 			style				WINDOW_STYLE_SHADER
-			rect				40 275 170 15
+			rect				45 274 170 15 //[Flendo] - Fixed position
 			background			"gfx/menus/menu_blendbox2"			// Frame around button
 			forecolor			1 1 1 1
 			visible				0
@@ -579,7 +579,7 @@
 			group				smallhighlight
 			name				smallhighlight8
 			style				WINDOW_STYLE_SHADER
-			rect				40 290 170 15
+			rect				45 289 170 15 //[Flendo] - Fixed position
 			background			"gfx/menus/menu_blendbox2"			// Frame around button
 			forecolor			1 1 1 1
 			visible				0
@@ -591,7 +591,7 @@
 			group				smallhighlight
 			name				smallhighlight9
 			style				WINDOW_STYLE_SHADER
-			rect				40 305 170 15
+			rect				45 304 170 15 //[Flendo] - Fixed position
 			background			"gfx/menus/menu_blendbox2"			// Frame around button
 			forecolor			1 1 1 1
 			visible				0
@@ -603,7 +603,7 @@
 			group				smallhighlight
 			name				smallhighlight10
 			style				WINDOW_STYLE_SHADER
-			rect				40 320 170 15
+			rect				45 319 170 15 //[Flendo] - Fixed position
 			background			"gfx/menus/menu_blendbox2"			// Frame around button
 			forecolor			1 1 1 1
 			visible				0
@@ -615,7 +615,7 @@
 			group				smallhighlight
 			name				smallhighlight11
 			style				WINDOW_STYLE_SHADER
-			rect				40 335 170 15
+			rect				45 334 170 15 //[Flendo] - Fixed position
 			background			"gfx/menus/menu_blendbox2"			// Frame around button
 			forecolor			1 1 1 1
 			visible				0
@@ -627,7 +627,7 @@
 			group				smallhighlight
 			name				smallhighlight12
 			style				WINDOW_STYLE_SHADER
-			rect				40 350 170 15
+			rect				45 349 170 15 //[Flendo] - Fixed position
 			background			"gfx/menus/menu_blendbox2"			// Frame around button
 			forecolor			1 1 1 1
 			visible				0
@@ -639,7 +639,7 @@
 			group				smallhighlight
 			name				smallhighlight13
 			style				WINDOW_STYLE_SHADER
-			rect				40 365 170 15
+			rect				45 364 170 15 //[Flendo] - Fixed position
 			background			"gfx/menus/menu_blendbox2"			// Frame around button
 			forecolor			1 1 1 1
 			visible				0
@@ -651,7 +651,7 @@
 			group				smallhighlight
 			name				smallhighlight14
 			style				WINDOW_STYLE_SHADER
-			rect				40 380 170 15
+			rect				45 379 170 15 //[Flendo] - Fixed position
 			background			"gfx/menus/menu_blendbox2"			// Frame around button
 			forecolor			1 1 1 1
 			visible				0
@@ -663,7 +663,7 @@
 			group				smallhighlight
 			name				smallhighlight15
 			style				WINDOW_STYLE_SHADER
-			rect				40 395 170 15
+			rect				45 394 170 15 //[Flendo] - Fixed position
 			background			"gfx/menus/menu_blendbox2"			// Frame around button
 			forecolor			1 1 1 1
 			visible				0
@@ -738,7 +738,7 @@
 			type				ITEM_TYPE_TEXTSCROLL
 			style				WINDOW_STYLE_EMPTY
 			visible				0
-			rect				235 254 360 148
+			rect				234 254 360 148 //[Flendo] - Fixed position
 			font				4
 			textscale			1
 			textalign			ITEM_ALIGN_LEFT	
@@ -811,7 +811,7 @@
 			type				ITEM_TYPE_TEXTSCROLL
 			style				WINDOW_STYLE_EMPTY
 			visible				0
-			rect				235 254 360 148
+			rect				234 254 360 148 //[Flendo] - Fixed position
 			font				4
 			textscale			1
 			textalign			ITEM_ALIGN_LEFT	
@@ -884,7 +884,7 @@
 			type				ITEM_TYPE_TEXTSCROLL
 			style				WINDOW_STYLE_EMPTY
 			visible				0
-			rect				235 254 360 148
+			rect				234 254 360 148 //[Flendo] - Fixed position
 			font				4
 			textscale			1
 			textalign			ITEM_ALIGN_LEFT	
@@ -957,7 +957,7 @@
 			type				ITEM_TYPE_TEXTSCROLL
 			style				WINDOW_STYLE_EMPTY
 			visible				0
-			rect				235 254 360 148
+			rect				234 254 360 148 //[Flendo] - Fixed position
 			font				4
 			textscale			1
 			textalign			ITEM_ALIGN_LEFT	
@@ -1030,7 +1030,7 @@
 			type				ITEM_TYPE_TEXTSCROLL
 			style				WINDOW_STYLE_EMPTY
 			visible				0
-			rect				235 254 360 148
+			rect				234 254 360 148 //[Flendo] - Fixed position
 			font				4
 			textscale			1
 			textalign			ITEM_ALIGN_LEFT	
@@ -1103,7 +1103,7 @@
 			type				ITEM_TYPE_TEXTSCROLL
 			style				WINDOW_STYLE_EMPTY
 			visible				0
-			rect				235 254 360 148
+			rect				234 254 360 148 //[Flendo] - Fixed position
 			font				4
 			textscale			1
 			textalign			ITEM_ALIGN_LEFT	
@@ -1176,7 +1176,7 @@
 			type				ITEM_TYPE_TEXTSCROLL
 			style				WINDOW_STYLE_EMPTY
 			visible				1
-			rect				235 254 360 148
+			rect				234 254 360 148 //[Flendo] - Fixed position
 			font				4
 			textscale			1
 			textalign			ITEM_ALIGN_LEFT	
@@ -1249,7 +1249,7 @@
 			type				ITEM_TYPE_TEXTSCROLL
 			style				WINDOW_STYLE_EMPTY
 			visible				1
-			rect				235 254 360 148
+			rect				234 254 360 148 //[Flendo] - Fixed position
 			font				4
 			textscale			1
 			textalign			ITEM_ALIGN_LEFT	
@@ -1322,7 +1322,7 @@
 			type				ITEM_TYPE_TEXTSCROLL
 			style				WINDOW_STYLE_EMPTY
 			visible				1
-			rect				235 254 360 148
+			rect				234 254 360 148 //[Flendo] - Fixed position
 			font				4
 			textscale			1
 			textalign			ITEM_ALIGN_LEFT	
@@ -1395,7 +1395,7 @@
 			type				ITEM_TYPE_TEXTSCROLL
 			style				WINDOW_STYLE_EMPTY
 			visible				0
-			rect				235 254 360 148
+			rect				234 254 360 148 //[Flendo] - Fixed position
 			font				4
 			textscale			1
 			textalign			ITEM_ALIGN_LEFT	
@@ -1468,7 +1468,7 @@
 			type				ITEM_TYPE_TEXTSCROLL
 			style				WINDOW_STYLE_EMPTY
 			visible				0
-			rect				235 254 360 148
+			rect				234 254 360 148 //[Flendo] - Fixed position
 			font				4
 			textscale			1
 			textalign			ITEM_ALIGN_LEFT	
@@ -1541,7 +1541,7 @@
 			type				ITEM_TYPE_TEXTSCROLL
 			style				WINDOW_STYLE_EMPTY
 			visible				0
-			rect				235 254 360 148
+			rect				234 254 360 148 //[Flendo] - Fixed position
 			font				4
 			textscale			1
 			textalign			ITEM_ALIGN_LEFT	
@@ -1614,7 +1614,7 @@
 			type				ITEM_TYPE_TEXTSCROLL
 			style				WINDOW_STYLE_EMPTY
 			visible				0
-			rect				235 254 360 148
+			rect				234 254 360 148 //[Flendo] - Fixed position
 			font				4
 			textscale			1
 			textalign			ITEM_ALIGN_LEFT	
@@ -1687,7 +1687,7 @@
 			type				ITEM_TYPE_TEXTSCROLL
 			style				WINDOW_STYLE_EMPTY
 			visible				0
-			rect				235 254 360 148
+			rect				234 254 360 148 //[Flendo] - Fixed position
 			font				4
 			textscale			1
 			textalign			ITEM_ALIGN_LEFT	
@@ -1760,7 +1760,7 @@
 			type				ITEM_TYPE_TEXTSCROLL
 			style				WINDOW_STYLE_EMPTY
 			visible				0
-			rect				235 254 360 148
+			rect				234 254 360 148 //[Flendo] - Fixed position
 			font				4
 			textscale			1
 			textalign			ITEM_ALIGN_LEFT	
