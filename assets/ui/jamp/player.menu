@@ -161,7 +161,7 @@
 			name				newgamebutton_glow
 			group				mods
 			style				WINDOW_STYLE_SHADER
-			rect				7 126 130 24
+			rect				-45 125 230 30 //[Flendo] - Fixed position
 			background			"gfx/menus/menu_buttonback"			// Frame around button
 			forecolor			1 1 1 1
 			visible			0
@@ -181,7 +181,7 @@
 			textscale			1.1
 			textaligny			0
 			textalign			ITEM_ALIGN_CENTER
-			textstyle			0
+			textstyle			3 //[Flendo] - Added shadow
 			textalignx			65
 			forecolor			1 .682 0 1
 			visible				1
@@ -208,7 +208,7 @@
 			name				profilebutton_glow
 			group				mods
 			style				WINDOW_STYLE_SHADER
-			rect				170 126 130 24
+			rect				120 125 230 30 //[Flendo] - Fixed position
 			background			"gfx/menus/menu_buttonback"			// Frame around button
 			forecolor			1 1 1 1
 			visible				0
@@ -228,7 +228,7 @@
 			font				3
 			textscale			1.1
 			textalign			ITEM_ALIGN_CENTER
-			textstyle			0
+			textstyle			3 //[Flendo] - Added shadow
 			textalignx			65
 			forecolor			1 1 1 1
 			visible			1
@@ -249,7 +249,7 @@
 			name				controlsbutton_glow
 			group				mods
 			style				WINDOW_STYLE_SHADER
-			rect				340 126 130 24
+			rect				290 125 230 30 //[Flendo] - Fixed position
 			background			"gfx/menus/menu_buttonback"			// Frame around button
 			forecolor			1 1 1 1
 			visible			0
@@ -268,7 +268,7 @@
 			textscale			1.1
 			textaligny			0
 			textalign			ITEM_ALIGN_CENTER
-			textstyle			0
+			textstyle			3 //[Flendo] - Added shadow
 			textalignx			65
 			backcolor			0 0 0 0
 			forecolor			1 .682 0 1
@@ -296,7 +296,7 @@
 			name				setupbutton_glow
 			group				mods
 			style				WINDOW_STYLE_SHADER
-			rect				502 126 130 24
+			rect				452 125 230 30 //[Flendo] - Fixed position
 			background			"gfx/menus/menu_buttonback"			// Frame around button
 			forecolor			1 1 1 1
 			visible			0
@@ -315,7 +315,7 @@
 			textscale			1.1
 			textaligny			0
 			textalign			ITEM_ALIGN_CENTER
-			textstyle			0
+			textstyle			3 //[Flendo] - Added shadow
 			textalignx			65
 			backcolor			0 0 0 0
 			forecolor			1 .682 0 1
@@ -349,7 +349,7 @@
 			name				exitgamebutton_glow
 			group				mods
 			style				WINDOW_STYLE_SHADER
-			rect				59 444 130 24 
+			rect				30 442 190 32 //[Flendo] - Fixed position
 			background			"gfx/menus/menu_buttonback"			// Frame around button
 			forecolor			1 1 1 1
 			visible				0
@@ -405,7 +405,7 @@
 			name				nameglow
 			group				mods
 			style				WINDOW_STYLE_SHADER
-			rect				20 156 300 32
+			rect				-10 157 300 32 //[Flendo] - Fixed position
 			background			"gfx/menus/menu_buttonback"			// Frame around button
 			forecolor			1 1 1 1
 			visible			0
@@ -478,7 +478,7 @@
 			style				0	
 			text				@MENUS_TEAM_COLOR
 			ownerdraw			UI_SKIN_COLOR
-			rect				50 209 160 20
+			rect				50 208 160 20 //[Flendo] - Changed position
 			textalign			ITEM_ALIGN_LEFT
 			textalignx			0
 			textaligny			-5
@@ -590,7 +590,7 @@
 			name				next_glow
 			group				mods
 			style				WINDOW_STYLE_SHADER
-			rect				455 444 130 24 
+			rect				425 442 190 32 //[Flendo] - Fixed position
 			background			"gfx/menus/menu_buttonback"
 			forecolor			1 1 1 1
 			visible			0
@@ -608,7 +608,7 @@
 			style				WINDOW_STYLE_EMPTY
 			rect				455 444 130 24 
 			font				3
-			textscale			1
+			textscale			1.1 //[Flendo] - Fixed scale
 			textalignx			65
 			textaligny			-1
 			textalign			ITEM_ALIGN_CENTER

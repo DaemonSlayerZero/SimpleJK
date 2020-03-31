@@ -35,10 +35,10 @@
 									
 		onESC 
 		{ 
-			play				"sound/interface/menuroam.wav"
+			play		        "sound/interface/esc.wav" //[Flendo] - Changed sound
 			uiScript 			"updatesabercvars"
 			close				saberMenu
-			open				characterMenu
+			open				playerMenu //[Flendo] - Changed menu
 		}
 
 
@@ -153,7 +153,7 @@
 			name				button_glow
 			group				none
 			style				WINDOW_STYLE_SHADER
-			rect				0 0 0 0
+			rect				-45 16 230 30 //[Flendo] - Fixed position
 			background			"gfx/menus/menu_buttonback"
 			forecolor			1 1 1 1
 			visible				0
@@ -173,7 +173,7 @@
 			textscale			1.1
 			textaligny			0
 			textalign			ITEM_ALIGN_CENTER
-			textstyle			0
+			textstyle			3 //[Flendo] - Added shadow
 			textalignx			65
 			forecolor			1 .682 0 1
 			visible				1
@@ -181,7 +181,6 @@
 			mouseEnter 
 			{ 
 				show			button_glow 
-				setitemrect		button_glow	7 14 130 30
 			}
 			mouseExit 
 			{ 
@@ -189,6 +188,7 @@
 			}	  	  
 			action 
 			{ 
+				play			"sound/interface/button1.wav" ; //[Flendo] - Added sound
 				close			all ; 
 				open			multiplayermenu 
 			}	  	  
@@ -208,7 +208,7 @@
 			font				3
 			textscale			1.1
 			textalign			ITEM_ALIGN_CENTER
-			textstyle			0
+			textstyle			3 //[Flendo] - Added shadow
 			textalignx			65
 			forecolor			1 1 1 1
 			visible			1
@@ -224,7 +224,19 @@
 			}
 		}
 
-		// Big button "CONTROLS"
+// Big button "CONTROLS"
+		itemDef 
+		{
+			name				controlsbutton_glow
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				290 16 230 30 //[Flendo] - Fixed position
+			background			"gfx/menus/menu_buttonback"			// Frame around button
+			forecolor			1 1 1 1
+			visible			0
+			decoration
+		}
+		
 		itemDef {
 			name				controlsbutton
 			group				cbut
@@ -237,7 +249,7 @@
 			textscale			1.1
 			textaligny			0
 			textalign			ITEM_ALIGN_CENTER
-			textstyle			0
+			textstyle			3 //[Flendo] - Added shadow
 			textalignx			65
 			backcolor			0 0 0 0
 			forecolor			1 .682 0 1
@@ -245,12 +257,11 @@
 			 
 			mouseEnter 
 			{ 
-				show			button_glow 
-				setitemrect		button_glow	340 14 130 30
+				show			controlsbutton_glow //[Flendo] - Fixed glow
 			}
 			mouseExit 
 			{ 
-				hide			button_glow 
+				hide			controlsbutton_glow //[Flendo] - Fixed glow
 			}	  	  
 			action 
 			{
@@ -261,7 +272,19 @@
 			}
 		}
 
-		// Big button "SETUP"
+// Big button "SETUP"
+		itemDef 
+		{
+			name				setupbutton_glow
+			group				none
+			style				WINDOW_STYLE_SHADER
+			rect				452 16 230 30 //[Flendo] - Fixed position
+			background			"gfx/menus/menu_buttonback"			// Frame around button
+			forecolor			1 1 1 1
+			visible			0
+			decoration
+		}
+		
 		itemDef 
 		{
 			name				setupbutton
@@ -275,7 +298,7 @@
 			textscale			1.1
 			textaligny			0
 			textalign			ITEM_ALIGN_CENTER
-			textstyle			0
+			textstyle			3 //[Flendo] - Added shadow
 			textalignx			65
 			backcolor			0 0 0 0
 			forecolor			1 .682 0 1
@@ -283,19 +306,18 @@
 			 
 			mouseEnter 
 			{ 
-				show			button_glow 
-				setitemrect		button_glow	502 14 130 30
+				show			setupbutton_glow //[Flendo] - Fixed glow
 			}
 			mouseExit 
 			{ 
-				hide			button_glow 
+				hide			setupbutton_glow //[Flendo] - Fixed glow
 			}	  	  
 			action 
 			{
 				play			"sound/interface/button1.wav" 
 				uiScript 		"updatesabercvars"
 				close			all 
-				open			setupMenu 
+				open			setup_menu //[Flendo] - Fixed glow
 			}
 		}
 
@@ -312,7 +334,7 @@
 			name				exitgamebutton_glow
 			group				mods
 			style				WINDOW_STYLE_SHADER
-			rect				59 444 130 24 
+			rect				30 442 190 32 //[Flendo] - Fixed position
 			background			"gfx/menus/menu_buttonback"	
 			forecolor			1 1 1 1
 			visible				0
@@ -413,7 +435,7 @@
 			text				@MENUS_SABER_TYPE
 			descText			@MENUS_SABER_TYPE_DESC
 			style				WINDOW_STYLE_EMPTY
-			rect				32 96 160 24
+			rect				40 96 160 24 //[Flendo] - Fixed position
 			font				3
 			textscale			1
 			textstyle			0
@@ -431,7 +453,7 @@
 			name				typebut_single_glow
 			group				none
 			style				WINDOW_STYLE_SHADER
-			rect				32 132 180 16
+			rect				20 132 180 20 //[Flendo] - Fixed position
 			background			"gfx/menus/menu_buttonback"
 			forecolor			1 1 1 1
 			visible				0
@@ -446,7 +468,7 @@
 			name				typebut_dual_glow
 			group				none
 			style				WINDOW_STYLE_SHADER
-			rect				32 152 180 16
+			rect				20 152 180 20 //[Flendo] - Fixed position
 			background			"gfx/menus/menu_buttonback"
 			forecolor			1 1 1 1
 			visible				0
@@ -461,7 +483,7 @@
 			name				typebut_staff_glow
 			group				none
 			style				WINDOW_STYLE_SHADER
-			rect				32 172 180 16
+			rect				20 172 180 20 //[Flendo] - Fixed position
 			background			"gfx/menus/menu_buttonback"
 			forecolor			1 1 1 1
 			visible				0
@@ -824,7 +846,7 @@
 			text				@MENUS_BLADE_COLOR
 			descText			@MENUS_BLADE_COLOR_DESC
 			style				WINDOW_STYLE_EMPTY
-			rect				446 96 160 24
+			rect				451 96 160 24 //[Flendo] - Fixed position
 			font				3
 			textscale			1
 			textstyle			0
@@ -1338,7 +1360,7 @@
 			name				begingamebutton_glow
 			group				mods
 			style				WINDOW_STYLE_SHADER
-			rect				455 444 130 24 
+			rect				425 442 190 32 //[Flendo] - Fixed position
 			background			"gfx/menus/menu_buttonback"
 			forecolor			1 1 1 1
 			visible				0
@@ -1353,9 +1375,9 @@
 			descText			@MENUS_APPLY_SABER_CHANGES
 			type				ITEM_TYPE_BUTTON
 			style				WINDOW_STYLE_EMPTY
-			rect				455 444 130 24 
+			rect				455 444 130 24 //[Flendo] - Fixed position 
 			font				3
-			textscale			1
+			textscale			1.1 //[Flendo] - Fixed scale
 			textalignx			65
 			textaligny			-1
 			textalign			ITEM_ALIGN_CENTER
@@ -1364,6 +1386,7 @@
 			visible				1
 	      	action 
 			{ 
+				play			"sound/interface/button1.wav" //[Flendo] - Added sound
 				uiScript 		"updatesabercvars"
 				close			sabermenu
 				open			main

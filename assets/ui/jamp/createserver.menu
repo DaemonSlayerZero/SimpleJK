@@ -1786,7 +1786,7 @@
 			name				backButton
 			group				none
 			style				WINDOW_STYLE_SHADER
-			rect				10 444 200 32
+			rect				30 442 190 32 //[Flendo] - Fixed position
 			background			"gfx/menus/menu_buttonback"			
 			forecolor			1 1 1 1
 			decoration
@@ -1803,10 +1803,10 @@
 			textscale			1.1
 			textstyle			3 //[Flendo] - Added shader 
 			style				WINDOW_STYLE_FILLED
-			rect				10 444 200 32
+			rect				59 444 130 24 //[Flendo] - Fixed position
 			textalign			1
-			textalignx			100		
-			textaligny			2
+			textalignx			65 //[Flendo] - Fixed position	
+			textaligny			-1 //[Flendo] - Fixed position
 			textalign			ITEM_ALIGN_CENTER
 			forecolor			1 .682 0 1
 			visible			1 
@@ -1831,7 +1831,7 @@
 			name					acceptButton
 			group					none
 			style					WINDOW_STYLE_SHADER
-			rect					430 444 200 32
+			rect					425 442 190 30 //[Flendo] - Added shader
 			background				"gfx/menus/menu_buttonback"			
 			forecolor				1 1 1 1
 			decoration
@@ -1848,10 +1848,10 @@
 			textscale				1.1
 			textstyle				3 //[Flendo] - Added shader
 			style					WINDOW_STYLE_FILLED
-			rect					430 444 200 32
+			rect					455 444 200 32 //[Flendo] - Fixed position
 			textalign				1
-			textalignx				100		
-			textaligny				2
+			textalignx				65 //[Flendo] - Fixed position
+			textaligny				-1 //[Flendo] - Fixed position
 			forecolor			1 .682 0 1
 			visible				1 
 
@@ -1880,7 +1880,7 @@
 			name					advancedButton
 			group					none
 			style					WINDOW_STYLE_SHADER
-			rect					220 444 200 32
+			rect					215 441 210 32 //[Flendo] - Fixed position
 			background				"gfx/menus/menu_buttonback"			
 			forecolor				1 1 1 1
 			decoration
@@ -1897,10 +1897,10 @@
 			textscale				1.1
 			textstyle				3 //[Flendo] - Added shader
 			style					WINDOW_STYLE_FILLED
-			rect					220 444 200 32
+			rect					255 444 130 24 //[Flendo] - Fixed position
 			textalign				1
-			textalignx				100		
-			textaligny				2
+			textalignx				65 //[Flendo] - Fixed position
+			textaligny				-1 //[Flendo] - Fixed position
 			forecolor			1 .682 0 1
 			visible					1 
 			action 

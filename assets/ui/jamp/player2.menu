@@ -23,7 +23,7 @@
 									
 		onESC 
 		{ 
-			play		"sound/interface/menuroam.wav"
+			play		"sound/interface/esc.wav" //[Flendo] - Changed sound
 			close		playerMenu2
 			open		playerMenu
 		}
@@ -173,10 +173,10 @@
 // Big button "NEW"
 		itemDef 
 		{
-			name				newbutton_glow
+			name				newgamebutton_glow //[Flendo] - Changed name
 			group				none
 			style				WINDOW_STYLE_SHADER
-			rect				7 16 130 24
+			rect				-45 16 230 30 //[Flendo] - Fixed position
 			background			"gfx/menus/menu_buttonback"
 			forecolor			1 1 1 1
 			visible				0
@@ -196,7 +196,7 @@
 			textscale			1.1
 			textaligny			0
 			textalign			ITEM_ALIGN_CENTER
-			textstyle			0
+			textstyle			3 //[Flendo] - Added shadow
 			textalignx			65
 			forecolor			1 .682 0 1
 			visible				1
@@ -211,6 +211,7 @@
 			}	  	  
 			action 
 			{ 
+				play			"sound/interface/button1.wav" ; //[Flendo] - Added sound
 				close			all ; 
 				open			multiplayermenu 
 			}
@@ -231,7 +232,7 @@
 			font				3
 			textscale			1.1
 			textalign			ITEM_ALIGN_CENTER
-			textstyle			0
+			textstyle			3 //[Flendo] - Added shadow
 			textalignx			65
 			forecolor			1 1 1 1
 			visible				1
@@ -253,7 +254,7 @@
 			name				controlsbutton_glow
 			group				none
 			style				WINDOW_STYLE_SHADER
-			rect				340 16 130 24
+			rect				290 16 230 30 //[Flendo] - Fixed position
 			background			"gfx/menus/menu_buttonback"			// Frame around button
 			forecolor			1 1 1 1
 			visible			0
@@ -272,7 +273,7 @@
 			textscale			1.1
 			textaligny			0
 			textalign			ITEM_ALIGN_CENTER
-			textstyle			0
+			textstyle			3 //[Flendo] - Added shadow
 			textalignx			65
 			backcolor			0 0 0 0
 			forecolor			1 .682 0 1
@@ -288,6 +289,7 @@
 			}	  	  
 			action 
 			{
+			    play			"sound/interface/button1.wav" ; //[Flendo] - Added sound
 				close			all ; 
 				open			controlsMenu ;
 			}
@@ -299,7 +301,7 @@
 			name				setupbutton_glow
 			group				none
 			style				WINDOW_STYLE_SHADER
-			rect				502 16 130 24
+			rect				452 16 230 30 //[Flendo] - Fixed position
 			background			"gfx/menus/menu_buttonback"			// Frame around button
 			forecolor			1 1 1 1
 			visible			0
@@ -319,7 +321,7 @@
 			textscale			1.1
 			textaligny			0
 			textalign			ITEM_ALIGN_CENTER
-			textstyle			0
+			textstyle			3 //[Flendo] - Added shadow
 			textalignx			65
 			backcolor			0 0 0 0
 			forecolor			1 .682 0 1
@@ -376,7 +378,7 @@
 			name				speciesbut_glow
 			group				none
 			style				WINDOW_STYLE_SHADER
-			rect				176 92 150 16
+			rect				173 88 150 25
 			background			"gfx/menus/menu_buttonback"
 			forecolor			1 1 1 1
 			visible			0
@@ -496,7 +498,7 @@
 			name				headbut_glow
 			group				none
 			style				WINDOW_STYLE_SHADER
-			rect				30 280 90 16
+			rect				24 276 90 25 //[Flendo] - Fixed position
 			background			"gfx/menus/menu_buttonback"
 			forecolor			1 1 1 1
 			visible			0
@@ -511,12 +513,12 @@
 			descText			@MENUS_SELECT_HEAD
 			type				ITEM_TYPE_BUTTON
 			style				WINDOW_STYLE_EMPTY
-			rect				30 280 90 16
+			rect				48 280 90 16 //[Flendo] - Fixed position
 			font				2
 			textscale			.9
 			textaligny			-5
 			textalign			ITEM_ALIGN_LEFT
-			textstyle			0
+			textstyle			3 //[Flendo] - Added shadow
 			textalignx			0
 			backcolor			0 0 0 0
 			forecolor			1 .682 0 1
@@ -547,7 +549,7 @@
 			name				torsobut_glow
 			group				none
 			style				WINDOW_STYLE_SHADER
-			rect				126 280 90 16
+			rect				130 276 90 25 //[Flendo] - Fixed position
 			background			"gfx/menus/menu_buttonback"
 			forecolor			1 1 1 1
 			visible				0
@@ -562,12 +564,12 @@
 			descText			@MENUS_SELECT_TORSO
 			type				ITEM_TYPE_BUTTON
 			style				WINDOW_STYLE_EMPTY
-			rect				126 280 90 16
+			rect				150 280 90 16 //[Flendo] - Fixed position
 			font				2
 			textscale			.9
 			textaligny			-5
 			textalign			ITEM_ALIGN_LEFT
-			textstyle			0
+			textstyle			3 //[Flendo] - Added shadow
 			textalignx			0
 			backcolor			0 0 0 0
 			forecolor			1 .682 0 1
@@ -597,7 +599,7 @@
 			name				legsbut_glow
 			group				none
 			style				WINDOW_STYLE_SHADER
-			rect				224 280 90 16
+			rect				240 276 90 25 //[Flendo] - Fixed position
 			background			"gfx/menus/menu_buttonback"
 			forecolor			1 1 1 1
 			visible				0
@@ -612,12 +614,12 @@
 			descText			@MENUS_SELECT_LEGS
 			type				ITEM_TYPE_BUTTON
 			style				WINDOW_STYLE_EMPTY
-			rect				224 280 90 16
+			rect				266 280 90 16 //[Flendo] - Fixed position
 			font				2
 			textscale			.9
 			textaligny			-5
 			textalign			ITEM_ALIGN_LEFT
-			textstyle			0
+			textstyle			3 //[Flendo] - Added shadow
 			textalignx			0
 			backcolor			0 0 0 0
 			forecolor			1 .682 0 1
@@ -726,7 +728,7 @@
 			name				exitgamebutton_glow
 			group				mods
 			style				WINDOW_STYLE_SHADER
-			rect				59 444 130 24 
+			rect				30 442 190 32 //[Flendo] - Fixed position
 			background			"gfx/menus/menu_buttonback"			// Frame around button
 			forecolor			1 1 1 1
 			visible				0
@@ -762,7 +764,7 @@
 			}	  	  
 			action 
 			{ 
-				play			"sound/weapons/saber/saberoff.mp3"
+				play			"sound/interface/esc.wav" //[Flendo] - Changed sound
 				close			playerMenu2
 				open			playerMenu
 			}
@@ -773,7 +775,7 @@
 			name				next_glow
 			group				mods
 			style				WINDOW_STYLE_SHADER
-			rect				455 444 130 24 
+			rect				425 442 190 32 //[Flendo] - Fixed position
 			background			"gfx/menus/menu_buttonback"
 			forecolor			1 1 1 1
 			visible			0
@@ -789,9 +791,9 @@
 			descText			@MENUS_APPLY_PLAYER_SABER
 			type				ITEM_TYPE_BUTTON
 			style				WINDOW_STYLE_EMPTY
-			rect				455 444 130 24 
+			rect				455 444 130 24 //[Flendo] - Fixed position 
 			font				3
-			textscale			1
+			textscale			1.1 //[Flendo] - Fixed scale
 			textalignx			65
 			textaligny			-1
 			textalign			ITEM_ALIGN_CENTER
