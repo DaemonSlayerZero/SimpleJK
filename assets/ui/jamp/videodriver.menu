@@ -18,8 +18,8 @@
 		onESC 
 		{ 
 			play				"sound/interface/button1.wav"
-			close				all
-			open				setupMenu
+			close				videodriverMenu
+//			open				setupMenu
 		}
 
 		onClose
@@ -67,7 +67,7 @@
 			rect				150 293 140 24
 			forecolor			1 1 1 1
 			textalign			ITEM_ALIGN_CENTER
-			textstyle			0
+			textstyle			3 //[Flendo] - Added shadow
 			textalignx			70
 			textaligny			0
 			font				3
@@ -102,7 +102,7 @@
 			ownerdraw			UI_GLINFO								// UI_GLINFO
 			font				4
 			textscale			1
-			rect				10 3 430 280
+			rect				10 -10 430 280 //[Flendo] - Changed position
 			forecolor			.79 .64 .22 1
 			style				WINDOW_STYLE_EMPTY
 			textalign			ITEM_ALIGN_LEFT

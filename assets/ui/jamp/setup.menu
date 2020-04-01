@@ -39,12 +39,12 @@
 			
 		onESC 
 		{ 
-			play				"sound/interface/button1.wav"
+			play				"sound/interface/esc.wav" ; //[Flendo] - Changed sound
 
 			defer				VideoSetup	videowarningMenu
 
-			close				all
-			open				mainMenu
+			close				setup_menu //[Flendo] - Updated this
+			open				main
 		}
 
 //----------------------------------------------------------------------------------------------
@@ -148,7 +148,7 @@
 			name				newgamebutton_glow
 			group				topbut
 			style				WINDOW_STYLE_SHADER
-			rect				7 126 130 24
+			rect				-40 125 230 30 //[Flendo] - Fixed position
 			background			"gfx/menus/menu_buttonback"			// Frame around button
 			forecolor			1 1 1 1
 			visible			0
@@ -168,7 +168,7 @@
 			textscale			1.1
 			textaligny			0
 			textalign			ITEM_ALIGN_CENTER
-			textstyle			0
+			textstyle			3 //[Flendo] - Added shader
 			textalignx			65
 			forecolor			1 .682 0 1
 			visible			1
@@ -196,7 +196,7 @@
 			name				profilebutton_glow
 			group				topbut
 			style				WINDOW_STYLE_SHADER
-			rect				170 126 130 24
+			rect				120 125 230 30 //[Flendo] - Fixed position
 			background			"gfx/menus/menu_buttonback"			// Frame around button
 			forecolor			1 1 1 1
 			visible			0
@@ -216,7 +216,7 @@
 			font				3
 			textscale			1.1
 			textalign			ITEM_ALIGN_CENTER
-			textstyle			0
+			textstyle			3 //[Flendo] - Added shader
 			textalignx			65
 			forecolor			1 .682 0 1
 			visible			1
@@ -245,7 +245,7 @@
 			name				controlsbutton_glow
 			group				topbut
 			style				WINDOW_STYLE_SHADER
-			rect				340 126 130 24
+			rect				290 125 230 30 //[Flendo] - Fixed position
 			background			"gfx/menus/menu_buttonback"			// Frame around button
 			forecolor			1 1 1 1
 			visible			0
@@ -264,7 +264,7 @@
 			textscale			1.1
 			textaligny			0
 			textalign			ITEM_ALIGN_CENTER
-			textstyle			0
+			textstyle			3 //[Flendo] - Added shader
 			textalignx			65
 			backcolor			0 0 0 0
 			forecolor			1 .682 0 1
@@ -294,7 +294,7 @@
 			name				setupbutton_glow
 			group				topbut
 			style				WINDOW_STYLE_SHADER
-			rect				502 126 130 24
+//			rect				502 126 130 24
 			background			"gfx/menus/menu_buttonback"			// Frame around button
 			forecolor			1 1 1 1
 			visible			0
@@ -313,7 +313,7 @@
 			textscale			1.1
 			textaligny			0
 			textalign			ITEM_ALIGN_CENTER
-			textstyle			0
+			textstyle			3 //[Flendo] - Added shader
 			textalignx			65
 			backcolor			0 0 0 0
 			forecolor			1 1 1 1
@@ -374,9 +374,9 @@
 		itemDef 
 		{
 			name				exitgamebutton_glow
-			group				mods
+//			group				mods
 			style				WINDOW_STYLE_SHADER
-			rect				255 444 130 24
+			rect				215 441 210 32 //[Flendo] - Fixed position
 			background			"gfx/menus/menu_buttonback"			// Frame around button
 			forecolor			1 1 1 1
 			visible			0
@@ -395,7 +395,7 @@
 			font				3
 			textscale			1.1
 			textalign			ITEM_ALIGN_CENTER
-			textstyle			0
+			textstyle			3 //[Flendo] - Added shadow
 			textalignx			65
 			textaligny			-1
 			forecolor			1 .682 0 1
@@ -448,7 +448,7 @@
 			name				video1button_glow
 			group				highlights
 			style				WINDOW_STYLE_SHADER
-			rect				80 185 180 24
+			rect				65 187 180 24 //[Flendo] - Fixed position
 			background			"gfx/menus/menu_blendbox2"			// Frame around button
 			forecolor			1 1 1 1
 			visible			0
@@ -467,7 +467,7 @@
 			textscale			0.9
 			textalignx			160
 			textaligny			2
-			textstyle			0
+			textstyle			3 //[Flendo] - Added shader
 			textalign			ITEM_ALIGN_RIGHT
 			forecolor			1 .682 0 1
 			visible			1
@@ -510,7 +510,7 @@
 			name				video2button_glow
 			group				highlights
 			style				WINDOW_STYLE_SHADER
-			rect				80 209 180 24
+			rect				65 211 180 24 //[Flendo] - Fixed position
 			background			"gfx/menus/menu_blendbox2"			// Frame around button
 			forecolor			1 1 1 1
 			visible			0
@@ -531,7 +531,7 @@
 			textalignx			160
 			textaligny			2
 			textalign			ITEM_ALIGN_RIGHT
-			textstyle			0
+			textstyle			3 //[Flendo] - Added shader
 			forecolor			1 .682 0 1
 			visible			1
 			descText			@MENUS_CONFIGUE_MORE_VIDEO_SETTINGS
@@ -571,7 +571,7 @@
 			name				soundbutton_glow
 			group				highlights
 			style				WINDOW_STYLE_SHADER
-			rect				80 233 180 24
+			rect				65 235 180 24 //[Flendo] - Fixed position
 			background			"gfx/menus/menu_blendbox2"			// Frame around button
 			forecolor			1 1 1 1
 			visible			0
@@ -591,7 +591,7 @@
 			textalignx			160
 			textaligny			2
 			textalign			ITEM_ALIGN_RIGHT
-			textstyle			0
+			textstyle			3 //[Flendo] - Added shader
 			forecolor			1 .682 0 1
 			visible			1
 			descText			@MENUS_CONFIGURE_SOUND_SETTINGS
@@ -631,7 +631,7 @@
 			name				gameoptionsbutton_glow
 			group				highlights
 			style				WINDOW_STYLE_SHADER
-			rect				80 257 180 24
+			rect				65 259 180 24 //[Flendo] - Fixed position
 			background			"gfx/menus/menu_blendbox2"			// Frame around button
 			forecolor			1 1 1 1
 			visible			0
@@ -651,7 +651,7 @@
 			textalignx			160
 			textaligny			2
 			textalign			ITEM_ALIGN_RIGHT
-			textstyle			0
+			textstyle			3 //[Flendo] - Added shader
 			forecolor			1 .682 0 1
 			visible			1
 			descText			@MENUS_CONFIGURE_GAME_OPTIONS
@@ -691,7 +691,7 @@
 			name				modsbutton_glow
 			group				highlights
 			style				WINDOW_STYLE_SHADER
-			rect				80 281 180 24
+			rect				65 283 180 24 //[Flendo] - Fixed position
 			background			"gfx/menus/menu_blendbox2"			// Frame around button
 			forecolor			1 1 1 1
 			visible			0
@@ -711,7 +711,7 @@
 			textalignx			160
 			textaligny			2
 			textalign			ITEM_ALIGN_RIGHT
-			textstyle			0
+			textstyle			3 //[Flendo] - Added shader
 			forecolor			1 .682 0 1
 			visible			1
 			descText			@MENUS_CONFIGURE_GAME_OPTIONS
@@ -752,7 +752,7 @@
 			name				gamedefaultsbutton_glow
 			group				highlights
 			style				WINDOW_STYLE_SHADER
-			rect				80 305 180 24
+			rect				65 307 180 24 //[Flendo] - Fixed position
 			background			"gfx/menus/menu_blendbox2"			// Frame around button
 			forecolor			1 1 1 1
 			visible			0
@@ -773,7 +773,7 @@
 			textalignx			160
 			textaligny			2
 			textalign			ITEM_ALIGN_RIGHT
-			textstyle			0
+			textstyle			3 //[Flendo] - Added shader
 			forecolor			1 .682 0 1
 			visible			1
 			descText			@MENUS_RESTORE_DEFAULT_SETTINGS
@@ -812,7 +812,7 @@
 			name				setup_background
 			group				none
 			style				WINDOW_STYLE_FILLED
-			rect				260 185 340 225	
+			rect				260 185 340 235	//[Flendo] - Fixed position
 			backcolor			0 0 .6 .5
 			forecolor			1 1 1 1
 			border				1
@@ -1375,7 +1375,7 @@
 		}
 
 		// APPLY CHANGES BUTTON
-		itemDef 
+		/*itemDef 
 		{
 			name				applybutton_glow
 			group				none
@@ -1385,7 +1385,7 @@
 			forecolor			1 0.5 0.5 1
 			visible				0
 			decoration
-		}
+		}*/
 
 		itemDef 
 		{
@@ -1394,7 +1394,7 @@
 			text				@MENUS_APPLY_CHANGES
 			type				ITEM_TYPE_BUTTON
 			style				WINDOW_STYLE_EMPTY
-			rect				260 384 340 14
+			rect				260 385 340 14 //[Flendo] - Updated position
 			textaligny			0
 			font 				4
 			textscale 			1
@@ -1407,11 +1407,11 @@
 
 			mouseEnter 
 			{ 
-				show			applybutton_glow
+				show			highlight15
 			}
 			mouseExit 
 			{ 
-				hide			applybutton_glow
+				hide			highlight15
 			}  	  
 			action
 			{ 
@@ -1420,7 +1420,7 @@
 				show			vidrestart
 				hide			video
 				hide			video2
-				hide			applybutton_glow
+				hide			highlight15
 			}
 		}
 
@@ -1436,7 +1436,7 @@
 			name				vidrestart_background
 			group				vidrestart
 			style				WINDOW_STYLE_SHADER
-			rect				260 185 342 227
+			rect				260 185 342 236 //[Flendo] - Fixed position
 			background			"gfx/menus/menu_boxred"					// Frame
 			forecolor			1 1 1 1
 			visible			0
@@ -1480,7 +1480,7 @@
 		{
 			name			vidrestart_yes_button
 			style			WINDOW_STYLE_SHADER
-			rect			467 384 120 32 
+			rect			467 383 120 32 //[Flendo] - Fixed position
 			background		"gfx/menus/menu_buttonback"			// Frame around button
 			forecolor		1 1 1 1
 			decoration
@@ -1514,10 +1514,12 @@
 			mouseEnter 
 			{ 
 				show			vidrestart_yes_button
+				hide			applyChanges //[Flendo] - Fixed thigs
 			}
 			mouseExit 
 			{ 
 				hide			vidrestart_yes_button
+				hide			applyChanges //[Flendo] - Fixed thigs
 			}	  	  
 
 		}
@@ -1526,7 +1528,7 @@
 		{
 			name			vidrestart_no_button
 			style			WINDOW_STYLE_SHADER
-			rect			275 384 120 32 
+			rect			275 383 120 32 //[Flendo] - Fixed position
 			background		"gfx/menus/menu_buttonback"			// Frame around button
 			forecolor		1 1 1 1
 			decoration
@@ -1557,7 +1559,7 @@
 				hide 			vidrestart ;
 				show			video ;
 				hide			video2 ;
-				show			applyChanges ;
+				hide			applyChanges ; //[Flendo] - Fixed this
 				hide			player ;
 				hide			vidrestart_yes_button ;
 				hide			vidrestart_no_button ;
@@ -1565,10 +1567,12 @@
 			mouseEnter 
 			{ 
 				show			vidrestart_no_button 
+				hide			applyChanges //[Flendo] - Fixed this
 			}
 			mouseExit 
 			{ 
 				hide			vidrestart_no_button 
+				hide			applyChanges //[Flendo] - Fixed this
 			}	  	  
 
 		}
@@ -1781,6 +1785,18 @@
 			} 
 		}
 
+		itemDef
+		{
+			name				videomodeglow
+			group				highlights
+			style				WINDOW_STYLE_SHADER
+			rect				260 366 340 14 //[Flendo] - Fixed position
+			background			"gfx/menus/menu_blendbox"
+			forecolor			1 1 1 1
+			visible			0
+			decoration
+		}
+
 		itemDef 
 		{	
 			name				video_mode
@@ -1790,7 +1806,7 @@
 			cvarTest			r_ext_texture_filter_anisotropic_avail
 			disableCvar			{ 0 }     
 			cvarfloat				r_ext_texture_filter_anisotropic 1 .5 16
-			rect				260 356 340 14
+			rect				260 365 340 14 //[Flendo] - Fixed position
 			textalign			ITEM_ALIGN_RIGHT
 			textalignx			174
 			textaligny			0
@@ -1805,11 +1821,11 @@
 			}
 			mouseenter 
 			{ 
-				show			highlight13
+				show			videomodeglow
 			}
 			mouseexit 
 			{ 
-				hide			highlight13
+				hide			videomodeglow
 			} 
 		}
 
@@ -1818,7 +1834,7 @@
 			name				advancedvideobutton_glow
 			group				highlights
 			style				WINDOW_STYLE_SHADER
-			rect				260 384 340 14
+			rect				260 392 340 14 //[Flendo] - Changed position
 			background			"gfx/menus/menu_buttonback"			// Frame around button
 			forecolor			1 1 1 1
 			visible				0
@@ -1831,7 +1847,7 @@
 			group				video2
       		type					ITEM_TYPE_BUTTON
 			text				@MENUS_SHOW_DRIVER_INFO
-			rect				260 384 340 14
+			rect				260 390 340 14
 			textalign			ITEM_ALIGN_CENTER
 			textalignx			170
 			textaligny			0
@@ -1851,7 +1867,7 @@
 			} 
 			action
 			{
-				play			sound/interface/button1.wav
+				play			"sound/interface/button1.wav"
 				hide			advancedvideobutton_glow
 				open 			videodriverMenu
 			}
@@ -1869,7 +1885,7 @@
 			type				ITEM_TYPE_SLIDER
 			text				@MENUS_EFFECTS_VOLUME
 			cvarfloat			"s_volume" 0 0 1
-			rect				260 188 340 14
+			rect				260 202 340 14 //[Flendo] - Changed position
 	   		textalign			ITEM_ALIGN_RIGHT
 			textalignx			174
 			textaligny			0
@@ -1885,11 +1901,11 @@
 
 			mouseenter 
 			{ 
-				show			highlight1
+				show			highlight2 //[Flendo] - Updated position
 			}
 			mouseexit 
 			{ 
-				hide			highlight1
+				hide			highlight2 //[Flendo] - Updated position
 			} 
 		}
 
@@ -1900,7 +1916,7 @@
 			type				ITEM_TYPE_SLIDER
 			text				@MENUS_MUSIC_VOLUME
 			cvarfloat			"s_musicvolume" 0 0 1
-			rect				260 216 340 14
+			rect				260 230 340 14 //[Flendo] - Changed position
 	   		textalign			ITEM_ALIGN_RIGHT
 			textalignx			174
 			textaligny			0
@@ -1916,11 +1932,11 @@
 
 			mouseenter 
 			{ 
-				show			highlight3
+				show			highlight4 //[Flendo] - Updated position
 			}
 			mouseexit 
 			{ 
-				hide			highlight3
+				hide			highlight4 //[Flendo] - Updated position
 			} 
 		}
 
@@ -1931,7 +1947,7 @@
 			type				ITEM_TYPE_SLIDER
 			text				@MENUS_VOICE_VOLUME
 			cvarfloat			"s_volumeVoice" 0 0 1
-			rect				260 244 340 14
+			rect				260 258 340 14 //[Flendo] - Changed position
 	   		textalign			ITEM_ALIGN_RIGHT
 			textalignx			174
 			textaligny			0
@@ -1947,11 +1963,11 @@
 
 			mouseenter 
 			{ 
-				show			highlight5
+				show			highlight6 //[Flendo] - Updated position
 			}
 			mouseexit 
 			{ 
-				hide			highlight5
+				hide			highlight6 //[Flendo] - Updated position
 			} 
 		}
 
@@ -1967,7 +1983,7 @@
 				@MENUS_LOW 	11  
 				@MENUS_HIGH 	22 
 			}
-			rect				260 272 340 14
+			rect				260 286 340 14 //[Flendo] - Changed position
 	   		textalign			ITEM_ALIGN_RIGHT
 			textalignx			174
 			textaligny			0
@@ -1981,11 +1997,11 @@
 
 			mouseenter 
 			{ 
-				show			highlight7
+				show			highlight8 //[Flendo] - Updated position
 			}
 			mouseexit 
 			{ 
-				hide			highlight7
+				hide			highlight8 //[Flendo] - Updated position
 			} 
 			action 
 			{
@@ -2006,7 +2022,7 @@
 				@MENUS_ON 	1 
 			}
 			text				@MENUS_EAX
-			rect				260 300 340 14
+			rect				260 314 340 14 //[Flendo] - Changed position
 	   		textalign			ITEM_ALIGN_RIGHT
 			textalignx			174
 			textaligny			0
@@ -2023,11 +2039,11 @@
 
 			mouseenter 
 			{ 
-				show			highlight9
+				show			highlight10 //[Flendo] - Updated position
 			}
 			mouseexit 
 			{ 
-				hide			highlight9
+				hide			highlight10 //[Flendo] - Updated position
 			} 
 		}
 
@@ -2036,7 +2052,7 @@
 			name				eax_icon
 			group				sound
 			style				WINDOW_STYLE_SHADER
-			rect				380 320 128 64
+			rect				380 334 128 64 //[Flendo] - Changed position
 			background			"gfx/menus/eax"
 			forecolor			1 1 1 1
 			visible				1
@@ -2623,7 +2639,7 @@
 			name				vidrestart_background
 			group				defaults
 			style				WINDOW_STYLE_SHADER
-			rect				260 185 342 227				
+			rect				260 185 342 236	//[Flendo] - Fixed position			
 			background			"gfx/menus/menu_boxred"					// Frame
 			forecolor			1 1 1 1
 			visible				0
